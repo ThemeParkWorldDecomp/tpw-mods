@@ -24,6 +24,10 @@ The test for where a change goes: does a park play the same with it on and with 
 tpw-port. If it changes the rules, the money, the visitors, the staff, the rides, the advisor, the game's content, what a
 control does or the save files, it belongs here, even as a setting that is off by default.
 
+One exception: an option the original game already had in its .sam data files belongs in tpw-port, even when it
+changes how a park plays, as long as it offers only the values the original accepts and its default is the original's.
+Players set it in the launcher or a game menu, never by editing a .sam file.
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).

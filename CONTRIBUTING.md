@@ -3,7 +3,8 @@
 This repository holds optional changes to how the game plays: the rules, the money, the visitors, the staff, the rides,
 the advisor, the game's content, what a control does or the save files. A change that keeps a park playing the same
 (a fix, another system, a display or launcher setting) belongs in [tpw-port](https://github.com/ThemeParkWorldDecomp/tpw-port),
-and tpw-decomp takes no changes. See the [README](README.md) for the three repositories.
+and so does an option the original game already had in its .sam data files, offered with only the values the original
+accepts and set in the launcher or a game menu. tpw-decomp takes no changes. See the [README](README.md) for the three repositories.
 
 ## What a mod needs
 
