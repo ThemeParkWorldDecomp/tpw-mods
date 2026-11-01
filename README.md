@@ -4,11 +4,15 @@ Optional changes to how Theme Park World plays, for the port in
 [tpw-port](https://github.com/ThemeParkWorldDecomp/tpw-port). Each mod is off until the player turns it on, and with
 every mod off the game is exactly the original.
 
-## Status
+## Mods
 
-There are no mods yet. tpw-port carries this repository as a submodule at mods/, but its launcher has no Mods screen
-yet and the game has no hooks for mods to use. The port builds and plays the same with mods/ present or absent. The
-first mod, the hooks it needs and the Mods screen will land together, each tested with the mod off and on.
+| Mod | What it does | Editions | Saved games |
+| --- | --- | --- | --- |
+| [Enable strikes](enable-strikes/README.md) | Staff can go on strike in an open park, as Bullfrog's code was written to do before the release blocked it. | US, European, Gold | Unchanged |
+
+tpw-port carries this repository as a submodule at mods/ and builds every mod in it into the launcher. The launcher's
+Mods button lists them, each with a switch, and every one is off until the player turns it on. A build without mods/
+has no mods and plays the same.
 
 ## The three repositories
 
