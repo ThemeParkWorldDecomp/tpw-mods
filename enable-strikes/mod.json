@@ -1,7 +1,7 @@
 {
   "id": "enable-strikes",
   "name": "Enable strikes",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "TPW Decomp",
   "license": "None chosen yet",
   "text": "Staff can go on strike in an open park, as Bullfrog's code was written to do before the release blocked it. Strikes still need a park older than 24 months and staff with a real grievance. The advisor also gives the two strike messages the original never used: a last warning a week before a strike, and word when a strike is over.",

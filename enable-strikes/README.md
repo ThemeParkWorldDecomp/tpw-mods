@@ -7,7 +7,7 @@ the original never used: a last warning a week before a strike, and word when a 
 | | |
 | --- | --- |
 | Id | enable-strikes |
-| Version | 1.0.0 |
+| Version | 1.1.0 |
 | Author | TPW Decomp |
 | Editions | US, European and Gold |
 | Conflicts | None |
@@ -71,12 +71,13 @@ in the monthly check lets strikes happen only when the park is open and has no v
 never happens. The PC v2.0 patch and the Mac 2.0.1 release are identical here.
 
 **Likely, judging from the code:** the feature was not finished. Two sets of advisor lines were recorded and translated
-but never wired up: the "last warning" and the "strike is over" messages. As a result, you never heard that a strike had
-ended. With the block in place, a strike that started in a busy park would never end on its own. A park without a
+but never wired up: the "last warning" and the "strike is over" messages. As a result, in the original you never heard
+that a strike had ended. With the block in place, a strike that started in a busy park would never end on its own. A park without a
 Staff Room sees almost every job walk out at the same time. There is no sign that strikes crashed the game.
 
 This mod removes only the visitors test, so the monthly check runs whenever the park is open (a closed park still
-starts no strikes). Everything else is the original's logic.
+starts no strikes), and it now plays the recorded "last warning" and "strike is over" lines (see below). Everything else
+is the original's logic.
 
 ## The two new advisor messages
 
@@ -88,6 +89,10 @@ the original's logic.
   monthly check, only while the park is open (or the debug key's switch is on).
 - **Strike over:** when a strike ends, at the month-end or because the park closed and emptied. Once per strike, not
   once per striker.
+
+The advisor speaks these two, like all of the original's staff warnings and strike lines, only for a player made in the
+normal game: the original's advisor table marks every staff message as normal-game only, so a player made in easy mode
+hears none of them. Strikes themselves happen in both.
 
 ## The debug key
 
