@@ -1,7 +1,8 @@
 # Enable strikes
 
 Staff can go on strike in an open park, as Bullfrog's code was written to do before the release blocked it. Strikes
-still need a park older than 24 months and staff with a real grievance.
+still need a park older than 24 months and staff with a real grievance. The advisor also gives the two strike messages
+the original never used: a last warning a week before a strike, and word when a strike is over.
 
 | | |
 | --- | --- |
@@ -11,7 +12,8 @@ still need a park older than 24 months and staff with a real grievance.
 | Editions | US, European and Gold |
 | Conflicts | None |
 | Saved games | Unchanged |
-| Hooks | strike_gate |
+| Hooks | strike_gate, strike_messages |
+| Needs | STP/TPW Launcher 0.3.0 or later |
 
 ## What it changes
 
@@ -19,7 +21,8 @@ In the released game the staff room's monthly check (CStaffHQ::UpdateMonthly) lo
 with no visitors in it, which a park past 24 months almost never is, so players only ever saw strikes with the strike
 cheat. With the mod on, the check runs in any open park, visitors or not. Nothing else changes: a closed park still
 starts no strikes, the warnings, strikes and their ends are the original's code, and the strike cheat works as before.
-The sections below say how that code behaves.
+The one addition is two advisor messages (see "The two new advisor messages" below). The sections below say how that
+code behaves.
 
 ## How strikes work
 
@@ -37,10 +40,12 @@ own. A job has a grievance when:
 What happens next:
 
 1. **First month with a grievance:** the advisor warns you that the group is "threatening to go on strike".
-2. **Still a grievance next month:** they strike. They walk out of the park to the pavement by the road and stand
+2. **A week before the next month-end, if the grievance is still there:** the advisor gives a last warning (new with this mod).
+3. **Still a grievance at that month-end:** they strike. They walk out of the park to the pavement by the road and stand
    there with placards. Their status reads "On strike". Staff of that job you hire during the strike join it.
-3. **The strike lasts until the next month-end.** Then they go back to work for a month.
-4. **If the problem is still there after that month,** they strike again, and keep doing so every other month until you fix it.
+4. **The strike lasts until the next month-end.** Then they go back to work for a month, and the advisor says the strike
+   is over (new with this mod).
+5. **If the problem is still there after that month,** they strike again, and keep doing so every other month until you fix it.
 
 While a group is on strike you still pay their wages. Striking mechanics mean no repairs and no ride upgrades.
 Striking janitors mean no cleaning, and so on. A group with 3 or fewer staff never strikes over tiredness or
@@ -70,8 +75,19 @@ but never wired up: the "last warning" and the "strike is over" messages. As a r
 ended. With the block in place, a strike that started in a busy park would never end on its own. A park without a
 Staff Room sees almost every job walk out at the same time. There is no sign that strikes crashed the game.
 
-This mod removes only the visitors test, so the monthly check runs whenever the park is open. Everything else is the
-original's logic. The missing advisor messages stay missing.
+This mod removes only the visitors test, so the monthly check runs whenever the park is open (a closed park still
+starts no strikes). Everything else is the original's logic.
+
+## The two new advisor messages
+
+The mod also wires up the two advisor messages the original recorded but never used. This is its only addition beyond
+the original's logic.
+
+- **Last warning:** a week before the month ends (on the seventh day before the 1st), for each job that would strike at
+  that month-end (warned last month, or back from a strike) and still has its grievance. Once a month, and, like the
+  monthly check, only while the park is open (or the debug key's switch is on).
+- **Strike over:** when a strike ends, at the month-end or because the park closed and emptied. Once per strike, not
+  once per striker.
 
 ## The debug key
 
@@ -99,9 +115,21 @@ In cheat mode, Ctrl+Alt+S (Windows, Linux) or Control+Option+S (Mac) forces stri
 | Walk to the picket line | CStaff::DoGeneralStaffThing | 0x101272b0 |
 | Picketing, ends when the park is closed and empty | CStaff::ProcessStriking | 0x10126504 |
 | Advisor message = situation x 5 + type base | CAdvisor::HandleStaffInfo | 0x1000c40c |
+| New day (the mod's last warning look: CStaffHQ::ModEndOfDay) | CParkTime::Update | 0x10112214 |
+| Strike over post (this mod) | CStaffHQ::StopStrikeInProgress | 0x1012be24 |
 
-- **Situations:** 0 warning, 1 last warning (unused), 2 strike, 3 called off, 4 strike over (unused).
+- **Situations:** 0 warning, 1 last warning (unused by the original, posted by this mod), 2 strike, 3 called off,
+  4 strike over (unused by the original, posted by this mod).
 - **Text:** TAG_SYSTEM 38-62, in groups of five: mechanics, janitors, guards, entertainers, researchers.
+
+| Situation | Advisor messages | Text (TAG_SYSTEM) | Speech clips |
+|---|---|---|---|
+| 0 warning | 33-37 | 38-42 | sp_95 to sp_109 |
+| 1 last warning (this mod) | 38-42 | 43-47 | sp_110 to sp_124 |
+| 2 strike | 43-47 | 48-52 | sp_125 to sp_139 |
+| 3 called off | 48-52 | 53-57 | sp_140 to sp_154 |
+| 4 strike over (this mod) | 53-57 | 58-62 | sp_155 to sp_169 |
+
 - **Data:** Standard.sam holds RestLevel, RecuperationRate, HappinessRecuperationRate, HappyHitCosNoRestArea, and
   StrikeArea (40, 9, 6 x 1).
 
@@ -121,6 +149,16 @@ replaced by fakes that record each call:
   the calls the Mac's program makes. A strike that is not forced is considered only in an open park with no visitors.
 - Mod on: the same cases, an open park with visitors in it considering a strike, and a closed park still not.
 
-It runs with the port's tests (`ctest -R mod_enable_strikes`).
+tests/test_enable_strikes_messages.cpp runs the port's CStaffHQ::StopStrikeInProgress, CStaffHQ::ModEndOfDay and
+CParkTime::Update the same way:
+
+- Strike over: one message per strike, however many strikers end it, none when no strike is in progress, none with the
+  mod off.
+- Last warning: every job, strike level, strike, grievance, open or closed park and debug switch; all five jobs at once;
+  and the park clock walked day by day through 30 and 31 day months, December, and February in 2000, 2001 and 2100. One
+  message on the seventh day before the 1st, only with the grievance still there; with the mod off, none, and the clock
+  never asks the staff room.
+
+They run with the port's tests (`ctest -R mod_enable_strikes`).
 
 Thanks to BMCTV and slappyhead for the strike reports.

@@ -42,6 +42,7 @@ field each). The hooks so far:
 | Hook | Where | Switched on |
 | --- | --- | --- |
 | `strike_gate` | CStaffHQ::UpdateMonthly | Strikes are considered in any open park, not only in one with no visitors. |
+| `strike_messages` | CStaffHQ::StopStrikeInProgress, CParkTime::Update (CStaffHQ::ModEndOfDay) | The advisor's two unused strike messages: "strike over" when a strike ends, and a "last warning" seven days before the month-end check to each job that would then strike and still has its grievance. |
 
 **The code** is one function, `tpw::mods::SwitchOn_<id>` with each `-` of the id written `_` (for enable-strikes,
 `SwitchOn_enable_strikes`). It takes the `Hooks` and sets the fields of the hooks the mod uses. The launcher calls it
