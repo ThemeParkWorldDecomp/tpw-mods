@@ -27,15 +27,15 @@ code behaves.
 ## How strikes work
 
 Your staff can go on strike, but only once your park is at least **2 years old**. At the end of each month the
-game checks each job (janitors, which the code calls handymen, mechanics, entertainers, guards, researchers) on its
-own. A job has a grievance when:
+game checks each job on its own: cleaners (janitors in the US and Gold editions), mechanics, entertainers, guards and
+researchers (scientists in the European edition). A job has a grievance when:
 
 - **They are worn out.** You have 4 or more staff in that job and their average energy is very low (under 15 out of 100).
   In practice this means they have no Staff Room they can walk to. Staff only rest when they are completely exhausted,
   and without a Staff Room they never recover.
 - **They are miserable.** You have 4 or more staff in that job and their average happiness is under 15. Resting in a
   Staff Room is also what restores happiness, so this usually has the same cause.
-- **Janitors only: the park is filthy.** More than a fifth of your paths are littered. This counts even with one janitor.
+- **Cleaners only: the park is filthy.** More than a fifth of your paths are littered. This counts even with one cleaner.
 
 What happens next:
 
@@ -48,14 +48,14 @@ What happens next:
 5. **If the problem is still there after that month,** they strike again, and keep doing so every other month until you fix it.
 
 While a group is on strike you still pay their wages. Striking mechanics mean no repairs and no ride upgrades.
-Striking janitors mean no cleaning, and so on. A group with 3 or fewer staff never strikes over tiredness or
-unhappiness (janitors can still strike over litter).
+Striking cleaners mean no cleaning, and so on. A group with 3 or fewer staff never strikes over tiredness or
+unhappiness (cleaners can still strike over litter).
 
 ## How to stop or prevent a strike
 
 - **Build a Staff Room, and make sure staff can reach it by path.** In a big park, build several. This alone prevents
   almost every strike.
-- **Keep the park clean.** Hire enough janitors and place bins so that less than a fifth of your paths are littered.
+- **Keep the park clean.** Hire enough cleaners and place bins so that less than a fifth of your paths are littered.
 - **Train your staff.** A promotion cheers a worker right up, and trained staff tire more slowly and recover faster.
 - **After a warning, fix the cause before the month ends.** If it is fixed in time, the advisor tells you they decided not to strike.
 - **During a strike:** fix the cause and wait for the month-end, when they go back to work. To end it at once, close
@@ -125,7 +125,8 @@ In cheat mode, Ctrl+Alt+S (Windows, Linux) or Control+Option+S (Mac) forces stri
 
 - **Situations:** 0 warning, 1 last warning (unused by the original, posted by this mod), 2 strike, 3 called off,
   4 strike over (unused by the original, posted by this mod).
-- **Text:** TAG_SYSTEM 38-62, in groups of five: mechanics, janitors, guards, entertainers, researchers.
+- **Text:** TAG_SYSTEM 38-62, in groups of five: mechanics, cleaners, guards, entertainers, researchers. The code calls
+  cleaners handymen (HANDYMAN_NAMES); the game never shows that word.
 
 | Situation | Advisor messages | Text (TAG_SYSTEM) | Speech clips |
 |---|---|---|---|
