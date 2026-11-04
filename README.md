@@ -9,6 +9,7 @@ every mod off the game is exactly the original.
 | Mod | What it does | Editions | Saved games |
 | --- | --- | --- | --- |
 | [Enable strikes](enable-strikes/README.md) | Staff can go on strike in an open park, as Bullfrog's code was written to do before the release blocked it. | US, European, Gold | Unchanged |
+| [Patrolling staff can cross bridges](staff-cross-bridges/README.md) | Staff walking their rounds can cross a footbridge, like the bridge over the stream in the Lost Kingdom, not only when sent to a job on the other side. | US, European, Gold | Unchanged |
 
 tpw-port carries this repository as a submodule at mods/ and builds every mod in it into the launcher. The launcher's
 Mods button lists them, each with a switch, and every one is off until the player turns it on. A build without mods/

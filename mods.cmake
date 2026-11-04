@@ -16,3 +16,11 @@ tpw_add_mod_test(enable-strikes NAME enable_strikes_messages SOURCES tests/test_
                       __ZN9CParkTime6UpdateEv                          # CParkTime::Update()
                       _gStaffHQNoStaff
                       _gParkDate)
+
+# Patrolling staff can cross bridges: a staff member's random walk may step onto, along and off a footbridge (the
+# staff_bridge_wander hook).
+tpw_add_mod(staff-cross-bridges SOURCES staff_cross_bridges.cpp)
+tpw_add_mod_test(staff-cross-bridges NAME staff_cross_bridges SOURCES tests/test_staff_cross_bridges.cpp
+                 GAME game/people/Peep.cpp
+                 KEEP __ZN5CPeep20SetRandomDestinationEv   # CPeep::SetRandomDestination()
+                      _gPeepNoCell)

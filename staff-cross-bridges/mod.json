@@ -1,0 +1,12 @@
+{
+  "id": "staff-cross-bridges",
+  "name": "Patrolling staff can cross bridges",
+  "version": "1.0.0",
+  "author": "TPW Decomp",
+  "license": "None chosen yet",
+  "text": "Staff walking their rounds can cross a footbridge, like the bridge over the stream in the Lost Kingdom. In the original they only crossed one when sent to a job on the other side. A bridge outside a worker's patrol area is still never taken.",
+  "editions": ["US", "European", "Gold"],
+  "conflicts": [],
+  "changes_saves": false,
+  "hooks": ["staff_bridge_wander"]
+}
