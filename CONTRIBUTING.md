@@ -33,6 +33,7 @@ stops the build with the file and the field named):
 | `conflicts` | The ids of mods it cannot be on with (both are checked). `[]` for none. |
 | `changes_saves` | `true` when a park saved with it on differs from the original's saves. The Mods box then warns the player. |
 | `hooks` | The hooks it switches on (below). |
+| `content` | Optional. For a mod that adds the game's content made from the player's own disc (never from this repository): the folder of the launcher's data folder's assets that holds it, such as `"ps1"`. Rides go in it as in the game folder, each a folder `data/levels/<theme>/<rides, features or sideshow>/<name>/` with its `<name>.sam`, whose `Info.DownloadedRideNumber` is 201 to 256 and its own. With the mod on, the launcher lays them over the game folder; the Mods box shows the mod locked until the folder holds a ride. Such a mod has `changes_saves` `true`. |
 
 **Hooks** are the only way a mod changes the game. A hook is a small point in tpw-port's copy of the game's code, one
 of its fixes (a row of its FIXES.md that names `TPW_MOD_HOOK <name>`), that does exactly what the original does unless

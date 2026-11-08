@@ -1,0 +1,13 @@
+{
+  "id": "ps1-rides",
+  "name": "PlayStation rides",
+  "version": "0.1.0",
+  "author": "TPW Decomp",
+  "license": "None chosen yet",
+  "text": "Adds the rides only the PlayStation edition had, converted from your own PlayStation disc. It stays locked until that disc's rides are in the data folder. A park that uses them needs them to load.",
+  "editions": ["US", "European", "Gold"],
+  "conflicts": [],
+  "changes_saves": true,
+  "hooks": [],
+  "content": "ps1"
+}
