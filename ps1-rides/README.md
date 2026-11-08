@@ -24,9 +24,10 @@ Each ride keeps the number the game saves it by (201 and up, apart from the Gold
 says so in its file:
 
 - **Loading.** A park with a PlayStation ride loads only with the mod on and that ride present. Without it the game says
-  which rides are missing and goes back, and the park file is left as it was, so you can add the rides and carry on.
-- **Online.** A park with PlayStation rides can be published. Its page says which rides it needs, and a player without
-  them is told so and cannot visit or download it.
+  which rides it needs and goes back to the menu once you close the message. Nothing is saved over the park, so you can
+  turn the rides on and carry on.
+- **Online.** A park with PlayStation rides can be uploaded, if the server takes its rides. A player without them who
+  visits it is told which rides it needs, the same way. Its page does not say so yet.
 
 With the mod off the game is the original: the rides are not in the lists, and parks that use none of them load and
 save exactly as before.
