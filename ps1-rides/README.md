@@ -12,8 +12,8 @@ to load.
 | Editions | US, European and Gold |
 | Conflicts | None |
 | Saved games | Changed: a park that uses one of its rides or the Tower needs the mod to load |
-| Hooks | ps1_badge (content: assets/ps1) |
-| Needs | STP/TPW Launcher 0.4.0 or later, and your own PlayStation disc |
+| Hooks | ps1_badge, ps1_ground (content: assets/ps1) |
+| Needs | STP/TPW Launcher 0.4.1 or later, and your own PlayStation disc |
 
 ## What it changes
 
@@ -33,6 +33,9 @@ that uses one says so in its file:
 - **The PS1 tag.** In Buy Ride, the picture of each PlayStation ride has a small "PS1" tag in its top right corner, so
   you can tell them from the others. It is display only, and the launcher's Settings box turns it off with "Show Ride
   Badges" (on by default), which also turns off the "GOLD" tag of the Gold Edition's extra rides.
+- **The ground.** The park's own ground, its grass, dirt and wear, shows through the grass of each PlayStation ride's
+  ground, cell by cell, as it does under the PC rides' bases, so the ride's square no longer stands out. It follows the
+  game's Ground blending option, and is display only.
 
 With the mod off the game is the original: the rides and the Tower are not in the lists, and parks that use none of them
 load and save exactly as before.
