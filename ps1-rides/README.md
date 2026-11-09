@@ -7,13 +7,13 @@ to load.
 | | |
 | --- | --- |
 | Id | ps1-rides |
-| Version | 0.1.0 |
+| Version | 0.1.1 |
 | Author | TPW Decomp |
 | Editions | US, European and Gold |
 | Conflicts | None |
 | Saved games | Changed: a park that uses one of its rides or the Tower needs the mod to load |
-| Hooks | None (content: assets/ps1) |
-| Needs | STP/TPW Launcher 0.3.3 or later, and your own PlayStation disc |
+| Hooks | ps1_badge (content: assets/ps1) |
+| Needs | STP/TPW Launcher 0.4.0 or later, and your own PlayStation disc |
 
 ## What it changes
 
@@ -30,6 +30,9 @@ that uses one says so in its file:
   is saved over the park, so you can turn the rides on and carry on.
 - **Online.** A park with PlayStation rides can be uploaded, if the server takes its rides. A player without them who
   visits it is told which rides it needs, the same way. Its page does not say so yet.
+- **The PS1 tag.** In Buy Ride, the picture of each PlayStation ride has a small "PS1" tag in its top right corner, so
+  you can tell them from the others. It is display only, and the launcher's Settings box turns it off with "Show Ride
+  Badges" (on by default), which also turns off the "GOLD" tag of the Gold Edition's extra rides.
 
 With the mod off the game is the original: the rides and the Tower are not in the lists, and parks that use none of them
 load and save exactly as before.

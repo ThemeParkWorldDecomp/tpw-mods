@@ -25,6 +25,7 @@ tpw_add_mod_test(staff-cross-bridges NAME staff_cross_bridges SOURCES tests/test
                  KEEP __ZN5CPeep20SetRandomDestinationEv   # CPeep::SetRandomDestination()
                       _gPeepNoCell)
 
-# PlayStation rides: no hook; its rides are content made from the player's own PlayStation disc (mod.json's "content",
-# the data folder's assets/ps1), which the launcher lays over the game folder with the mod on.
+# PlayStation rides: its rides are content made from the player's own PlayStation disc (mod.json's "content", the data
+# folder's assets/ps1), which the launcher lays over the game folder with the mod on; the ps1_badge hook tags them "PS1"
+# on the Buy Ride panel while the launcher's "Show Ride Badges" is on.
 tpw_add_mod(ps1-rides SOURCES ps1_rides.cpp)

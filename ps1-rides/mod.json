@@ -1,13 +1,13 @@
 {
   "id": "ps1-rides",
   "name": "PlayStation rides",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "TPW Decomp",
   "license": "None chosen yet",
   "text": "Adds the seven rides only the PlayStation edition had, and its Tower as a Halloween scenery object, converted from your own PlayStation disc. It stays locked until that disc's rides are in the data folder. A park that uses them needs them to load.",
   "editions": ["US", "European", "Gold"],
   "conflicts": [],
   "changes_saves": true,
-  "hooks": [],
+  "hooks": ["ps1_badge"],
   "content": "ps1"
 }
