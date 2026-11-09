@@ -12,7 +12,7 @@ to load.
 | Editions | US, European and Gold |
 | Conflicts | None |
 | Saved games | Changed: a park that uses one of its rides or the Tower needs the mod to load |
-| Hooks | ps1_badge, ps1_ground (content: assets/ps1) |
+| Hooks | ps1_badge, ps1_ground, ps1_save_repair (content: assets/ps1) |
 | Needs | STP/TPW Launcher 0.4.1 or later, and your own PlayStation disc |
 
 ## What it changes
@@ -36,6 +36,14 @@ that uses one says so in its file:
 - **The ground.** The park's own ground, its grass, dirt and wear, shows through the grass of each PlayStation ride's
   ground, cell by cell, as it does under the PC rides' bases, so the ride's square no longer stands out. It follows the
   game's Ground blending option, and is display only.
+- **Parks saved with 0.4.0.** The 0.4.1 converter turns each ride the right way round and puts its entrance and exit
+  where the PlayStation had them, so after you convert your disc again a ride placed before may have its doors on other
+  cells than its queue and exit path. As such a park loads, each of those rides has its doors moved: the old queue
+  becomes a path, the new exit is joined to the nearest path and the new entrance gets a queue to it (on the path in
+  front of it when the paths stay joined without that cell, or laid over a few cells of grass). Where no path is in
+  reach the entrance or the exit is left unjoined, as for any ride whose queue or exit path is still to be built. The
+  visitors in the old queue look for the ride again. Rides whose doors are already right, and every other ride, are not
+  touched, so loading the park again changes nothing.
 
 With the mod off the game is the original: the rides and the Tower are not in the lists, and parks that use none of them
 load and save exactly as before.

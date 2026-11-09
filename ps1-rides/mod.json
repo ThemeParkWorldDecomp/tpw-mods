@@ -8,6 +8,6 @@
   "editions": ["US", "European", "Gold"],
   "conflicts": [],
   "changes_saves": true,
-  "hooks": ["ps1_badge", "ps1_ground"],
+  "hooks": ["ps1_badge", "ps1_ground", "ps1_save_repair"],
   "content": "ps1"
 }

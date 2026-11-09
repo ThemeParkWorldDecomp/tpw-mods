@@ -27,6 +27,7 @@ tpw_add_mod_test(staff-cross-bridges NAME staff_cross_bridges SOURCES tests/test
 
 # PlayStation rides: its rides are content made from the player's own PlayStation disc (mod.json's "content", the data
 # folder's assets/ps1), which the launcher lays over the game folder with the mod on; the ps1_badge hook tags them "PS1"
-# on the Buy Ride panel while the launcher's "Show Ride Badges" is on, and the ps1_ground hook blends their own ground
-# into the park's ground.
+# on the Buy Ride panel while the launcher's "Show Ride Badges" is on, the ps1_ground hook blends their own ground
+# into the park's ground, and the ps1_save_repair hook moves the doors of rides placed with launcher 0.4.0's conversion as a
+# park loads.
 tpw_add_mod(ps1-rides SOURCES ps1_rides.cpp)
