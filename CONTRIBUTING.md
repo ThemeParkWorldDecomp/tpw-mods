@@ -47,6 +47,7 @@ field each). The hooks so far:
 | `ps1_badge` | UpdateViewWindow (src/game/ui/ui_ridepanel.cpp) | The PlayStation rides (the mod's content) have a "PS1" tag on the Buy Ride panel's picture while the launcher's "Show Ride Badges" is on. Display only. |
 | `ps1_ground` | CalculateSkirtVertices (src/game/park/SkirtDeform.cpp) | Each cell of a PlayStation ride's own ground (the mod's content) is blended into the park's ground under it, as a PC ride's base is, while the game's Ground blending option is on. Display only. |
 | `ps1_save_repair` | CSaveLoad::PostLoadOperations (src/game/save/SaveLoad.cpp) | As a park loads, each PlayStation ride (the mod's content) whose saved entrance and exit are not on the cells its ride file now gives has them moved there: the old queue becomes a path, the new exit is joined to a path and the new entrance gets a queue joined to one, or is left to be built where no path is in reach. A ride whose doors are already right is left alone. |
+| `ps1_pick_rotation` | PlaceRide (src/game/ui/ui_ridepanel.cpp) | A PlayStation ride (the mod's content) picked from Buy Ride starts half a turn round, so its entrance comes up at the bottom at the default camera, as a PC ride's does. Picking again while a ride is held keeps the player's own turn. Rides already placed and saved parks are not touched. |
 
 **The code** is one function, `tpw::mods::SwitchOn_<id>` with each `-` of the id written `_` (for enable-strikes,
 `SwitchOn_enable_strikes`). It takes the `Hooks` and sets the fields of the hooks the mod uses. The launcher calls it

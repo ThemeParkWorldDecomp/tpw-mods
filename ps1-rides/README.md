@@ -7,13 +7,13 @@ to load.
 | | |
 | --- | --- |
 | Id | ps1-rides |
-| Version | 0.1.2 |
+| Version | 0.1.3 |
 | Author | TPW Decomp |
 | Editions | US, European and Gold |
 | Conflicts | None |
 | Saved games | Changed: a park that uses one of its rides or the Tower needs the mod to load |
-| Hooks | ps1_badge, ps1_ground, ps1_save_repair (content: assets/ps1) |
-| Needs | STP/TPW Launcher 0.4.1 or later, and your own PlayStation disc |
+| Hooks | ps1_badge, ps1_ground, ps1_save_repair, ps1_pick_rotation (content: assets/ps1) |
+| Needs | STP/TPW Launcher 0.4.3 or later, and your own PlayStation disc |
 
 ## What it changes
 
@@ -44,6 +44,11 @@ that uses one says so in its file:
   reach the entrance or the exit is left unjoined, as for any ride whose queue or exit path is still to be built. The
   visitors in the old queue look for the ride again. Rides whose doors are already right, and every other ride, are not
   touched, so loading the park again changes nothing.
+- **Picking a ride.** A PlayStation ride picked from Buy Ride comes up the way a PC ride does: with the camera as a new
+  park starts it, its entrance at the bottom. The PlayStation rides have their entrance on the other side of their
+  square, so they used to come up facing away. You turn the ride as before, and picking another ride while you hold
+  one keeps the turn you gave it. Only the starting turn changes: the rides already in a park, and saved parks, stay
+  as they were placed.
 
 With the mod off the game is the original: the rides and the Tower are not in the lists, and parks that use none of them
 load and save exactly as before.

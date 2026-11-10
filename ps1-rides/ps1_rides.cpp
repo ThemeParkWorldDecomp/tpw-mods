@@ -7,6 +7,9 @@
 // CalculateSkirtVertices), as the PC rides' bases are, so the park's grass shows where the disc's grass was. Display only.
 // And the ps1_save_repair hook on: as a park loads, each of these rides whose saved doors are not where its ride file now
 // puts them has them moved, with its queue and exit path joined again (tpw-port's include/Ps1SaveRepair.h).
+// And the ps1_pick_rotation hook on: each of these rides picked from Buy Ride starts half a turn round, so that its
+// entrance comes up at the bottom at the default camera, as a PC ride's does (tpw-port's include/Ps1PickRotation.h).
+// Only the pick changes: saved parks and the rides already placed keep their rotation.
 #include "mods.h"
 
 namespace tpw::mods {
@@ -15,6 +18,7 @@ void SwitchOn_ps1_rides(Hooks& hooks) {
     hooks.ps1Badge = true;
     hooks.ps1Ground = true;
     hooks.ps1SaveRepair = true;
+    hooks.ps1PickRotation = true;
 }
 
 }  // namespace tpw::mods
