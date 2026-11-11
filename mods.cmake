@@ -32,3 +32,9 @@ tpw_add_mod_test(staff-cross-bridges NAME staff_cross_bridges SOURCES tests/test
 # park loads, and the ps1_pick_rotation hook starts each of its rides picked from Buy Ride half a turn round, its
 # entrance at the bottom like a PC ride's.
 tpw_add_mod(ps1-rides SOURCES ps1_rides.cpp)
+
+# TPI Worlds and Rides: three more worlds (Arabian Nights, Polar Zone, Land of Invention), content made from the
+# player's own copy of Theme Park Inc (mod.json's "content", the data folder's assets/tpi), which the launcher lays over
+# the game folder with the mod on; the tpi_worlds hook adds them to the game's list of worlds and the tpi_islands hook
+# gives the island screen a second group of islands for them.
+tpw_add_mod(tpi-worlds SOURCES tpi_worlds.cpp)

@@ -10,6 +10,8 @@ every mod off the game is exactly the original.
 | --- | --- | --- | --- |
 | [Enable strikes](enable-strikes/README.md) | Staff can go on strike in an open park, as Bullfrog's code was written to do before the release blocked it. | US, European, Gold | Unchanged |
 | [Patrolling staff can cross bridges](staff-cross-bridges/README.md) | Staff walking their rounds can cross a footbridge, like the bridge over the stream in the Lost Kingdom, not only when sent to a job on the other side. | US, European, Gold | Unchanged |
+| [PlayStation rides](ps1-rides/README.md) | Adds the seven rides only the PlayStation edition had, and its Tower as a Halloween scenery object, converted from your own PlayStation disc. | US, European, Gold | Changed: a park that uses them needs the mod to load |
+| [TPI Worlds and Rides](tpi-worlds/README.md) | Adds three worlds made from your own copy of Theme Park Inc (SimCoaster): Arabian Nights, Polar Zone and Land of Invention, each with its own rides, shops, sideshows and scenery, and a second group of islands for them. | US, European, Gold | Changed: a park in one of its worlds needs the mod and that world to load |
 
 tpw-port carries this repository as a submodule at mods/ and builds every mod in it into the launcher. The launcher's
 Mods button lists them, each with a switch, and every one is off until the player turns it on. A build without mods/
