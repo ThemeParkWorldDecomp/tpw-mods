@@ -1,5 +1,9 @@
 # tpw-mods
 
+[![Join the Discord](https://img.shields.io/badge/Discord-Join_the_server-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/QSvugmgCwW)
+
+**Join the Discord: [discord.gg/QSvugmgCwW](https://discord.gg/QSvugmgCwW)**
+
 Optional changes to how Theme Park World plays, for the port in
 [tpw-port](https://github.com/ThemeParkWorldDecomp/tpw-port). Each mod is off until the player turns it on, and with
 every mod off the game is exactly the original.
