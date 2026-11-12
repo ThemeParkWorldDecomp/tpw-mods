@@ -55,6 +55,15 @@ one he gives a new player in the lobby). Every other line is the game's, as in t
   can be higher than with the mod off (the master save itself is the same either way).
 - **Prices.** As in Theme Park World, the converted rides charge nothing per ride; shops and sideshows keep Theme Park
   Inc's prices.
+- **Bridges and land.** Theme Park Inc's obstacles (the bridges, the drained lake, the tunnels, the rocks) are part of
+  each world's ground, drawn as they are once cleared where the data has that state. A path can be built across the
+  bridges and the visitors walk over them. Land past the canyons and dry riverbeds under the obstacles can be bought
+  with Buy Land as any other land, so the park can grow into the land Theme Park Inc opened with its obstacles.
+- **The Invention gate.** Land of Invention's gate starts closed and swings open by itself as soon as the park buys
+  the land it stands on or any land right next to it with Buy Land. The park's starting fence runs through the gate,
+  so the land a new park starts with does not count: only land bought beyond it does. Once the land the gate stands
+  on is the park's, a path can be built through the open gate and the visitors walk through. A new or restarted park
+  has it closed; a saved park needs nothing more, since the gate follows the park's land.
 - **Outside the gate.** Theme Park Inc's entrance is laid out otherwise than Theme Park World's: the bus stops on a
   pavement two rows deep under the map's edge, with the road between it and the gate. In the three worlds the visitors
   off the bus wait to cross on that pavement and pay at the ticket booths, and the visitors leaving wait for the bus on
