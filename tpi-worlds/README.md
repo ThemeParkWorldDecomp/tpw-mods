@@ -64,6 +64,15 @@ one he gives a new player in the lobby). Every other line is the game's, as in t
   so the land a new park starts with does not count: only land bought beyond it does. Once the land the gate stands
   on is the park's, a path can be built through the open gate and the visitors walk through. A new or restarted park
   has it closed; a saved park needs nothing more, since the gate follows the park's land.
+- **Rides that run.** Theme Park Inc's Golden Ticket rides (Spin Djinn, The Scorpions and others in all three
+  worlds) hold their opening pose until their script's SPECIAL switch is set, which Theme Park World never sets. In
+  the three worlds such a ride's script starts with the switch set, so the ride is drawn whole once built and its
+  guests board and ride, where it was left with only its moving parts showing and a queue nobody left. The Scorpions is a bumper ride of a kind Theme Park World has no bumper cars for,
+  so in the three worlds it runs as Theme Park World's bumper cars, where the game crashed once it took its first
+  rider. A ride's spoken lines use the donor's sound banks, which lack some of Theme Park Inc's samples; in the three
+  worlds a line whose sample is missing ends quietly, where it could freeze the game. The Polar zone's ice skates have no camera
+  of their own for riding them in first person; in the three worlds that view sits at the skater's head, where it did
+  not open.
 - **Outside the gate.** Theme Park Inc's entrance is laid out otherwise than Theme Park World's: the bus stops on a
   pavement two rows deep under the map's edge, with the road between it and the gate. In the three worlds the visitors
   off the bus wait to cross on that pavement and pay at the ticket booths, and the visitors leaving wait for the bus on
