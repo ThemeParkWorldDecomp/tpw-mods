@@ -55,6 +55,11 @@ one he gives a new player in the lobby). Every other line is the game's, as in t
   can be higher than with the mod off (the master save itself is the same either way).
 - **Prices.** As in Theme Park World, the converted rides charge nothing per ride; shops and sideshows keep Theme Park
   Inc's prices.
+- **Outside the gate.** Theme Park Inc's entrance is laid out otherwise than Theme Park World's: the bus stops on a
+  pavement two rows deep under the map's edge, with the road between it and the gate. In the three worlds the visitors
+  off the bus wait to cross on that pavement and pay at the ticket booths, and the visitors leaving wait for the bus on
+  it, where Theme Park World's walks would leave them standing in front of the gate. A park saved with visitors
+  standing there gets them to the bus.
 - **Easy mode.** A player in easy mode starts one of the three worlds with an empty park: Theme Park Inc's ready-made
   parks are not converted, and a donor's park is never used, since it would be a park of the donor world.
 - **Saved games.** The master save keeps one record per world as it does for the original four, so research,
