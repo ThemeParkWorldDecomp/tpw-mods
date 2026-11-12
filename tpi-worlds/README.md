@@ -42,9 +42,10 @@ donor: a world's build lists are its own.
   the ring in view. Each island is made by the converter from the world's own gate, terrain and textures. The original
   four islands stay where they are, and the mod's worlds do not move them in the Settings box's theme choice either.
 - **The worlds' names.** The island screen, its gate signs and the park's name use the world's title (Arabian Nights,
-  Polar Zone, Land of Invention), and each ride, shop, sideshow and piece of scenery of a converted world is named by
-  its own file, since the game's built-in name table knows none of them. The gate's two sign boards show the title's
-  two halves.
+  Polar Zone, Land of Invention), and each ride, shop, sideshow and piece of scenery of a converted world has the name
+  Theme Park Inc itself shows for it, which the converter reads from the copy's own English object names (the game's
+  built-in name table knows none of them). An item that list does not name keeps its own file's name, written in
+  title case. The gate's two sign boards show the title's two halves.
 - **Golden keys.** Like the original four, the three worlds cost golden keys to enter, in the order Theme Park Inc
   opens them: Land of Invention 1, Polar Zone 3 and Arabian Nights 5. The original four keep their prices.
   With the mod on, the golden key and ticket counts a player is shown also count the three worlds' records, so they
