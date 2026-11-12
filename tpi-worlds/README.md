@@ -35,7 +35,10 @@ original four, which the game reads in the world's place:
 
 The donor gives the music, the sound banks, the advisor's voice and models, and any file of the world's folder the
 conversion has no source for. Rides, shops, sideshows, scenery, the island and the easy-mode park never come from the
-donor: a world's build lists are its own.
+donor: a world's build lists are its own. The advisor never names the donor: the only lines of a world's own speech
+are its welcomes ("Welcome to Halloween World"), and Theme Park Inc has no welcome for its three zones, so in the mod's
+worlds he says the game's own welcome that names no world instead ("Welcome to Theme Park World", or Sim Theme Park, the
+one he gives a new player in the lobby). Every other line is the game's, as in the original four.
 
 - **Three more islands.** The island screen has a second ring of islands for the three worlds, north of the original
   four. Tab, or a right click on the view, flies the camera between the rings; the arrows and the panel's buttons browse
