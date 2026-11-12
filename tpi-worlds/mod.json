@@ -1,7 +1,7 @@
 {
   "id": "tpi-worlds",
   "name": "TPI Worlds and Rides",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "TPW Decomp",
   "license": "None chosen yet",
   "text": "Adds three worlds made from your own copy of Theme Park Inc (SimCoaster), the game's sequel: Arabian Nights, Polar Zone and Land of Invention, each with its own rides, shops, sideshows and scenery, played by Theme Park World's rules. The island screen gets a second group of islands for them. It stays locked until that game's worlds are in the data folder. A park in one of them needs them to load.",
