@@ -55,6 +55,12 @@ one he gives a new player in the lobby). Every other line is the game's, as in t
   can be higher than with the mod off (the master save itself is the same either way).
 - **Prices.** As in Theme Park World, the converted rides charge nothing per ride; shops and sideshows keep Theme Park
   Inc's prices.
+- **Shops that sell.** Theme Park Inc's shops ask up to six times what their goods cost, and its Polar Zone and Land
+  of Invention records give visitors no leeway over a fair price, so in Theme Park World visitors turned most of those
+  shops down. In the three worlds each shop leaves its visitors the room Theme Park World's own shops do between price
+  and worth, so they buy at Theme Park Inc's prices. The photo booth ($40 a photo) is a shop visitors walk up to and
+  pay, where none ever chose it; it makes them happier, and nothing shows on them afterwards. A park saved before this
+  gets both when it is loaded.
 - **Bridges and land.** Theme Park Inc's obstacles (the bridges, the drained lake, the tunnels, the rocks) are part of
   each world's ground, drawn as they are once cleared where the data has that state. A path can be built across the
   bridges and the visitors walk over them. Land past the canyons and dry riverbeds under the obstacles can be bought
