@@ -70,6 +70,11 @@ one he gives a new player in the lobby). Every other line is the game's, as in t
   so the land a new park starts with does not count: only land bought beyond it does. Once the land the gate stands
   on is the park's, a path can be built through the open gate and the visitors walk through. A new or restarted park
   has it closed; a saved park needs nothing more, since the gate follows the park's land.
+- **The park's edge.** Theme Park Inc shows its park's edge with each world's own walls and fences, the river and
+  the lake; it draws no hoarding. Theme Park World's hoarding pieces in its data (a leafy jungle fence and a Halloween
+  one) are not drawn in the three worlds, where they ran across the grass beside the worlds' own walls; a park saved
+  with them loses them when it is loaded. The land the park owns and Buy Land are unchanged: the darkened ground
+  outside the park still shows where it ends.
 - **Rides that run.** Theme Park Inc's Golden Ticket rides (Spin Djinn, The Scorpions and others in all three
   worlds) hold their opening pose until their script's SPECIAL switch is set, which Theme Park World never sets. In
   the three worlds such a ride's script starts with the switch set, so the ride is drawn whole once built and its
