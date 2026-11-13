@@ -9,7 +9,8 @@
 // Mod off: no walk ever steps onto the bridge (tpw-decomp's tests/test_CPeep_SetRandomDestination.py compares the walk
 // with the Mac's program). Mod on: a cleaner steps onto the bridge, walks across and steps off on the far bank; a bridge
 // outside the patrol area is never taken; visitors walk as before; and in a park with no bridge, every walk and every
-// random draw is the same as with the mod off.
+// random draw is the same as with the mod off. In the tpi-worlds mod's worlds staff cross with this mod off too (the
+// port's tpw::TpiWorldInPlay); with the tpi_worlds hook on in an original world, they do not.
 #include <cstdint>
 #include <cstdio>
 #include <cstdlib>
@@ -24,6 +25,7 @@
 #include "MapCell.h"
 #include "ObjectParts.h"
 #include "ThingReceivers.h"
+#include "TpiGateFlow.h"
 #include "World.h"
 
 // The mod's own switch-on function (staff_cross_bridges.cpp; the launcher's catalog declares it too).
@@ -186,11 +188,14 @@ void Place(uint16_t id) {
     gPeep[6] = static_cast<uint8_t>(YOf(id));
 }
 
-// `count` walks of a peep of `type` from `start`, each from where the last one ended, with the mod on or off.
-std::vector<Walk> Wander(bool modOn, uint8_t type, uint16_t start, int count, uint32_t seed) {
+// `count` walks of a peep of `type` from `start`, each from where the last one ended, with the mod on or off; `tpi` 1:
+// the tpi_worlds hook on in an original world, 2: on in one of the tpi-worlds mod's worlds.
+std::vector<Walk> Wander(bool modOn, uint8_t type, uint16_t start, int count, uint32_t seed, int tpi = 0) {
     tpw::mods::Hooks hooks;
     if (modOn) tpw::mods::SwitchOn_staff_cross_bridges(hooks);
+    hooks.tpiWorlds = tpi != 0;
     tpw::mods::Apply(hooks);
+    tpw::gTpiThemeIsMod = tpi == 2;
     std::memset(gPeep, 0, sizeof gPeep);
     gPeep[2] = type;
     Place(start);
@@ -204,6 +209,7 @@ std::vector<Walk> Wander(bool modOn, uint8_t type, uint16_t start, int count, ui
         if (gWalk.target != 0) Place(gWalk.target);
     }
     tpw::mods::Apply(tpw::mods::Hooks());
+    tpw::gTpiThemeIsMod = false;
     return walks;
 }
 
@@ -331,6 +337,23 @@ int main() {
         Check(sn.bridge && sn.east && sn.westAgain && sn.crossings >= 2,
               "mod on: the cleaner steps onto the bridge, crosses it and steps off, and comes back (" +
                   std::to_string(sn.crossings) + " crossings)" + at);
+    }
+
+    // The tpi-worlds mod's worlds, this mod off: a cleaner crosses as with the mod on, the same walks and draws; with the
+    // tpi_worlds hook on in an original world, never.
+    for (uint32_t seed : {1u, 77u}) {
+        const std::string at = " (seed " + std::to_string(seed) + ")";
+        const std::vector<Walk> tpiWorld = Wander(false, 4, west, kWalks, seed, 2);
+        const std::vector<Walk> on = Wander(true, 4, west, kWalks, seed);
+        const Seen st = Look(tpiWorld);
+        why.clear();
+        Check(SameWalks(on, tpiWorld, why) && st.bridge && st.east && st.crossings >= 2,
+              "mod off in a tpi-worlds world: the cleaner crosses as with the mod on" + at + (why.empty() ? "" : ": " + why));
+        const std::vector<Walk> tpwWorld = Wander(false, 4, west, kWalks, seed, 1);
+        const std::vector<Walk> off = Wander(false, 4, west, kWalks, seed);
+        why.clear();
+        Check(SameWalks(off, tpwWorld, why) && !Look(tpwWorld).bridge,
+              "mod off, the tpi_worlds hook on in an original world: the walks of the mod off" + at + (why.empty() ? "" : ": " + why));
     }
 
     // Every staff job (the peep types 4 to 8).

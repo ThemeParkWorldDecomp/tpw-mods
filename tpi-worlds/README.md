@@ -62,9 +62,12 @@ one he gives a new player in the lobby). Every other line is the game's, as in t
   pay, where none ever chose it; it makes them happier, and nothing shows on them afterwards. A park saved before this
   gets both when it is loaded.
 - **Bridges and land.** Theme Park Inc's obstacles (the bridges, the drained lake, the tunnels, the rocks) are part of
-  each world's ground, drawn as they are once cleared where the data has that state. A path can be built across the
-  bridges and the visitors walk over them. Land past the canyons and dry riverbeds under the obstacles can be bought
-  with Buy Land as any other land, so the park can grow into the land Theme Park Inc opened with its obstacles.
+  each world's ground, drawn as they are once cleared where the data has that state. The bridges are footbridges like
+  the one in Lost Kingdom: lay a path up to each end, and the visitors cross on their way to the rides beyond; nothing
+  can be built on the bridge itself. Staff walking their rounds cross them too, as the staff-cross-bridges mod lets
+  them in the original worlds; in these three worlds they do so whether that mod is on or not. A park saved before this gets its bridges back as footbridges when it is loaded
+  (a path laid on a bridge goes). Land past the canyons and dry riverbeds under the obstacles can be bought with Buy
+  Land as any other land, so the park can grow into the land Theme Park Inc opened with its obstacles.
 - **The Invention gate.** Land of Invention's gate starts closed and swings open by itself as soon as the park buys
   the land it stands on or any land right next to it with Buy Land. The park's starting fence runs through the gate,
   so the land a new park starts with does not count: only land bought beyond it does. Once the land the gate stands
