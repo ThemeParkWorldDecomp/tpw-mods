@@ -77,6 +77,9 @@ one he gives a new player in the lobby). Every other line is the game's, as in t
   like a footbridge: lay a path up to each end. While the land at a tunnel's far end is not the park's, the rubble that
   blocked it in Theme Park Inc still lies there; it goes as soon as the park buys land on the tunnel or right next to
   it beyond its starting fence, as the Invention gate opens. A saved park needs nothing more.
+- **The rock.** Arabian Nights' great rock in the northwest stands, and nothing can be built under it, until the park
+  buys land on it or right next to it beyond its starting fence; then it clears and its ground is land like any other.
+  A saved park needs nothing more: the rock follows the park's land.
 - **The park's edge.** Theme Park Inc shows its park's edge with each world's own walls and fences, the river and
   the lake; it draws no hoarding. Theme Park World's hoarding pieces in its data (a leafy jungle fence and a Halloween
   one) are not drawn in the three worlds, where they ran across the grass beside the worlds' own walls; a park saved
