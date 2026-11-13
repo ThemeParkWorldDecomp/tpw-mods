@@ -77,7 +77,8 @@ one he gives a new player in the lobby). Every other line is the game's, as in t
   the lake; it draws no hoarding. Theme Park World's hoarding pieces in its data (a leafy jungle fence and a Halloween
   one) are not drawn in the three worlds, where they ran across the grass beside the worlds' own walls; a park saved
   with them loses them when it is loaded. The land the park owns and Buy Land are unchanged: the darkened ground
-  outside the park still shows where it ends.
+  outside the park still shows where it ends, and it fades into the park's land over one cell, as the ground does
+  along the river's banks, where it ended in a hard stepped line.
 - **Rides that run.** Theme Park Inc's Golden Ticket rides (Spin Djinn, The Scorpions and others in all three
   worlds) hold their opening pose until their script's SPECIAL switch is set, which Theme Park World never sets. In
   the three worlds such a ride's script starts with the switch set, so the ride is drawn whole once built and its
@@ -96,7 +97,8 @@ one he gives a new player in the lobby). Every other line is the game's, as in t
   parks are not converted, and a donor's park is never used, since it would be a park of the donor world.
 - **Saved games.** The master save keeps one record per world as it does for the original four, so research,
   golden keys and the park's name are kept per world. A park saved in one of the three loads only with the mod on and
-  that world present. With the mod off those records are passed over, so the four worlds answer the game's questions
+  that world present. A Land of Invention park started with launcher 0.5.1 or earlier gets its staff room in the build
+  list when it is loaded, and the security cameras placed in it stay cameras. With the mod off those records are passed over, so the four worlds answer the game's questions
   (all research done, the keys collected) exactly as the original's.
 - **Online.** A park in one of the three worlds cannot be published: the online server has no such world, and the
   game refuses the upload before anything is sent, with its own "cannot upload" message.
