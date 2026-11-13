@@ -73,6 +73,10 @@ one he gives a new player in the lobby). Every other line is the game's, as in t
   so the land a new park starts with does not count: only land bought beyond it does. Once the land the gate stands
   on is the park's, a path can be built through the open gate and the visitors walk through. A new or restarted park
   has it closed; a saved park needs nothing more, since the gate follows the park's land.
+- **The tunnels.** Arabian Nights' and Polar Zone's tunnels are drawn dug through, and the visitors walk along them
+  like a footbridge: lay a path up to each end. While the land at a tunnel's far end is not the park's, the rubble that
+  blocked it in Theme Park Inc still lies there; it goes as soon as the park buys land on the tunnel or right next to
+  it beyond its starting fence, as the Invention gate opens. A saved park needs nothing more.
 - **The park's edge.** Theme Park Inc shows its park's edge with each world's own walls and fences, the river and
   the lake; it draws no hoarding. Theme Park World's hoarding pieces in its data (a leafy jungle fence and a Halloween
   one) are not drawn in the three worlds, where they ran across the grass beside the worlds' own walls; a park saved
