@@ -87,7 +87,8 @@ one he gives a new player in the lobby). Every other line is the game's, as in t
   rider. A ride's spoken lines use the donor's sound banks, which lack some of Theme Park Inc's samples; in the three
   worlds a line whose sample is missing ends quietly, where it could freeze the game. The Polar zone's ice skates have no camera
   of their own for riding them in first person; in the three worlds that view sits at the skater's head, where it did
-  not open.
+  not open. The Great Lake's boat has a wake meant for the water of Theme Park Inc's lake; on Theme Park World's dry
+  land it showed as a blue patch flickering on the grass, so in the three worlds it is hidden.
 - **Outside the gate.** Theme Park Inc's entrance is laid out otherwise than Theme Park World's: the bus stops on a
   pavement two rows deep under the map's edge, with the road between it and the gate. In the three worlds the visitors
   off the bus wait to cross on that pavement and pay at the ticket booths, and the visitors leaving wait for the bus on
