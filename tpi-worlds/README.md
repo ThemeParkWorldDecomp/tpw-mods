@@ -80,6 +80,10 @@ one he gives a new player in the lobby). Every other line is the game's, as in t
 - **The rock.** Arabian Nights' great rock in the northwest stands, and nothing can be built under it, until the park
   buys land on it or right next to it beyond its starting fence; then it clears and its ground is land like any other.
   A saved park needs nothing more: the rock follows the park's land.
+- **The cliff and the swamp.** Arabian Nights' cliff in the east and Polar Zone's swamp beside its starting land stay
+  the same way, until the park buys land on them or right next to them beyond its starting fence; then they clear, the
+  cliff's ground becoming land like any other. Theme Park Inc cleared each with a mission Theme Park World has no part
+  of (golden tickets and skilled staff); buying the land stands in for it.
 - **The park's edge.** Theme Park Inc shows its park's edge with each world's own walls and fences, the river and
   the lake; it draws no hoarding. Theme Park World's hoarding pieces in its data (a leafy jungle fence and a Halloween
   one) are not drawn in the three worlds, where they ran across the grass beside the worlds' own walls; a park saved
