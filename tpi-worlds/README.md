@@ -82,7 +82,9 @@ one he gives a new player in the lobby). Every other line is the game's, as in t
 - **Rides that run.** Theme Park Inc's Golden Ticket rides (Spin Djinn, The Scorpions and others in all three
   worlds) hold their opening pose until their script's SPECIAL switch is set, which Theme Park World never sets. In
   the three worlds such a ride's script starts with the switch set, so the ride is drawn whole once built and its
-  guests board and ride, where it was left with only its moving parts showing and a queue nobody left. The Scorpions is a bumper ride of a kind Theme Park World has no bumper cars for,
+  guests board and ride, where it was left with only its moving parts showing and a queue nobody left. Such a ride
+  built before this (in a park saved with 0.5.1) gets the switch when the park is loaded and starts running.
+  The Scorpions is a bumper ride of a kind Theme Park World has no bumper cars for,
   so in the three worlds it runs as Theme Park World's bumper cars, where the game crashed once it took its first
   rider. A ride's spoken lines use the donor's sound banks, which lack some of Theme Park Inc's samples; in the three
   worlds a line whose sample is missing ends quietly, where it could freeze the game. The Polar zone's ice skates have no camera
