@@ -97,7 +97,8 @@ one he gives a new player in the lobby). Every other line is the game's, as in t
   built before this (in a park saved with 0.5.1) gets the switch when the park is loaded and starts running.
   The Scorpions is a bumper ride of a kind Theme Park World has no bumper cars for,
   so in the three worlds it runs as Theme Park World's bumper cars, where the game crashed once it took its first
-  rider. A ride's spoken lines use the donor's sound banks, which lack some of Theme Park Inc's samples; in the three
+  rider. A park saved with The Scorpions before launcher 0.5.2 loads with it as those bumper cars, where it crashed
+  as it loaded. A ride's spoken lines use the donor's sound banks, which lack some of Theme Park Inc's samples; in the three
   worlds a line whose sample is missing ends quietly, where it could freeze the game. The Polar zone's ice skates have no camera
   of their own for riding them in first person; in the three worlds that view sits at the skater's head, where it did
   not open. The Great Lake's boat has a wake meant for the water of Theme Park Inc's lake; on Theme Park World's dry
@@ -107,6 +108,17 @@ one he gives a new player in the lobby). Every other line is the game's, as in t
   off the bus wait to cross on that pavement and pay at the ticket booths, and the visitors leaving wait for the bus on
   it, where Theme Park World's walks would leave them standing in front of the gate. A park saved with visitors
   standing there gets them to the bus.
+- **Theme Park Inc's visitors.** Theme Park Inc's own kids, parents and grandparents walk and ride among Theme Park
+  World's kids in the three worlds: 7 visitors in 10 look like kids, 2 like parents and 1 like a grandparent, as in
+  Theme Park Inc. The kids are six of Theme Park World's eight and Theme Park Inc's four, each as often as the others:
+  Theme Park World's other two look the same as two of Theme Park Inc's, which take their place in these worlds. A
+  look only: every visitor pays, rides, thinks and walks by Theme Park World's rules. A visitor keeps its look when
+  the park is saved and loaded; with the mod off, or in a build without it, the same park's visitors are all Theme
+  Park World's kids.
+- **Men's and women's toilets.** Theme Park Inc has a toilet for boys and one for girls. In the three worlds, once the
+  park has at least one of each (open or not), men and boys use only the men's and women and girls only the women's;
+  with only one kind built, everyone uses it. A visitor is a boy or a girl, a man or a woman, by its look. Theme Park
+  World's own toilet is for everyone. Nothing is saved: an older park follows the rule as soon as it is loaded.
 - **Easy mode.** A player in easy mode starts one of the three worlds with an empty park: Theme Park Inc's ready-made
   parks are not converted, and a donor's park is never used, since it would be a park of the donor world.
 - **Saved games.** The master save keeps one record per world as it does for the original four, so research,
