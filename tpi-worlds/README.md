@@ -112,9 +112,18 @@ one he gives a new player in the lobby). Every other line is the game's, as in t
   World's kids in the three worlds: 7 visitors in 10 look like kids, 2 like parents and 1 like a grandparent, as in
   Theme Park Inc. The kids are six of Theme Park World's eight and Theme Park Inc's four, each as often as the others:
   Theme Park World's other two look the same as two of Theme Park Inc's, which take their place in these worlds. A
-  look only: every visitor pays, rides, thinks and walks by Theme Park World's rules. A visitor keeps its look when
-  the park is saved and loaded; with the mod off, or in a build without it, the same park's visitors are all Theme
-  Park World's kids.
+  visitor keeps its look when the park is saved and loaded; with the mod off, or in a build without it, the same
+  park's visitors are all Theme Park World's kids.
+- **Theme Park Inc's three generations.** Each visitor in the three worlds also acts as one of Theme Park Inc's own
+  visitor types of the generation it looks like (eight each for kids, parents and grandparents), taken from your
+  copy's levels file: it arrives with that type's money (with Theme Park Inc's spread either way), it prefers rides as
+  exciting as that type likes them, so most grandparents favour the gentler ones, and it walks at that type's speed,
+  so grandparents walk at under half a kid's pace and parents a little slower than kids. Every few days, as in Theme
+  Park Inc, the weather moves each generation's happiness, thirst and hunger its own way: rain, storms, snow and
+  heatwaves (a heatwave being the world's own hottest weather). Which type a visitor is follows from the visitor
+  itself, so it stays the same when the park is saved and loaded, and nothing new goes into the save. Theme Park Inc's
+  umbrellas and its boredom threshold have nothing in Theme Park World to act on and are left out. Worlds made by an
+  older launcher are converted again to get this.
 - **Men's and women's toilets.** Theme Park Inc has a toilet for boys and one for girls. In the three worlds, once the
   park has at least one of each (open or not), men and boys use only the men's and women and girls only the women's;
   with only one kind built, everyone uses it. A visitor is a boy or a girl, a man or a woman, by its look. Theme Park
@@ -135,7 +144,7 @@ port's fixes never sees the converted files.
 
 ## Not yet the original's
 
-The three worlds are played by Theme Park World's rules: its money, its visitors, its staff, its research and its
-advisor. Theme Park Inc's own rules (its missions, its business goals, its staff training) are not part of this mod.
-The rides' scripts and run times, the sounds and the music are the donor world's where the conversion has nothing to
-go by.
+The three worlds are played by Theme Park World's rules: its money, its staff, its research and its advisor, and its
+visitors but for the three generations above. Theme Park Inc's own rules (its missions, its business goals, its staff
+training) are not part of this mod. The rides' scripts and run times, the sounds and the music are the donor world's
+where the conversion has nothing to go by.
