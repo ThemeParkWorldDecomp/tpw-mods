@@ -8,7 +8,7 @@ folder. A park in one of them needs them to load.
 | | |
 | --- | --- |
 | Id | tpi-worlds |
-| Version | 0.1.5 |
+| Version | 0.1.6 |
 | Author | TPW Decomp |
 | Editions | US, European and Gold |
 | Conflicts | None |
@@ -101,8 +101,12 @@ one he gives a new player in the lobby). Every other line is the game's, as in t
   as it loaded. A ride's spoken lines use the donor's sound banks, which lack some of Theme Park Inc's samples; in the three
   worlds a line whose sample is missing ends quietly, where it could freeze the game. The Polar zone's ice skates have no camera
   of their own for riding them in first person; in the three worlds that view sits at the skater's head, where it did
-  not open. The Great Lake's boat has a wake meant for the water of Theme Park Inc's lake; on Theme Park World's dry
-  land it showed as a blue patch flickering on the grass, so in the three worlds it is hidden.
+  not open. The Great Lake is Theme Park Inc's boating lake on Land of Invention's lake: it
+  can be built only with its back (the side away from its entrance and exit) on the lake's water, so the lake's shore
+  land must be bought first. Its boats sail out onto the lake, bumping about among the buoys with their wake on the
+  water, and come back to the ride to let their riders off; the riders stay seated, and the first person view follows
+  a boat. A Great Lake built away from the water in a park saved before 0.1.6 keeps its boats on its own plot, as
+  before. The boats float a little above the water or the ground, so their wake never flickers.
 - **Outside the gate.** Theme Park Inc's entrance is laid out otherwise than Theme Park World's: the bus stops on a
   pavement two rows deep under the map's edge, with the road between it and the gate. In the three worlds the visitors
   off the bus wait to cross on that pavement and pay at the ticket booths, and the visitors leaving wait for the bus on
