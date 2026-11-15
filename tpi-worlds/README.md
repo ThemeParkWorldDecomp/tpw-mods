@@ -83,7 +83,9 @@ one he gives a new player in the lobby). Every other line is the game's, as in t
 - **The cliff and the swamp.** Arabian Nights' cliff in the east and Polar Zone's swamp beside its starting land stay
   the same way, until the park buys land on them or right next to them beyond its starting fence; then they clear, the
   cliff's ground becoming land like any other. Theme Park Inc cleared each with a mission Theme Park World has no part
-  of (golden tickets and skilled staff); buying the land stands in for it.
+  of (golden tickets and skilled staff); buying the land stands in for it. The swamp lies in the ground in the
+  northwest corner as Theme Park Inc draws it, and nothing is built on it until it clears (since launcher 0.5.6;
+  before, it was not drawn at all and blocked nothing).
 - **The park's edge.** Theme Park Inc shows its park's edge with each world's own walls and fences, the river and
   the lake; it draws no hoarding. Theme Park World's hoarding pieces in its data (a leafy jungle fence and a Halloween
   one) are not drawn in the three worlds, where they ran across the grass beside the worlds' own walls; a park saved
@@ -124,10 +126,10 @@ one he gives a new player in the lobby). Every other line is the game's, as in t
   exciting as that type likes them, so most grandparents favour the gentler ones, and it walks at that type's speed,
   so grandparents walk at under half a kid's pace and parents a little slower than kids. Every few days, as in Theme
   Park Inc, the weather moves each generation's happiness, thirst and hunger its own way: rain, storms, snow and
-  heatwaves (a heatwave being the world's own hottest weather). Which type a visitor is follows from the visitor
-  itself, so it stays the same when the park is saved and loaded, and nothing new goes into the save. Theme Park Inc's
-  umbrellas and its boredom threshold have nothing in Theme Park World to act on and are left out. Worlds made by an
-  older launcher are converted again to get this.
+  heatwaves (a heatwave being the world's own hottest weather; snow counted as rain until launcher 0.5.6). Which type
+  a visitor is follows from the visitor itself, so it stays the same when the park is saved and loaded, and nothing
+  new goes into the save. Theme Park Inc's umbrellas and its boredom threshold have nothing in Theme Park World to act
+  on and are left out. Worlds made by an older launcher are converted again to get this.
 - **Men's and women's toilets.** Theme Park Inc has a toilet for boys and one for girls. In the three worlds, once the
   park has at least one of each (open or not), men and boys use only the men's and women and girls only the women's;
   with only one kind built, everyone uses it. A visitor is a boy or a girl, a man or a woman, by its look. Theme Park
