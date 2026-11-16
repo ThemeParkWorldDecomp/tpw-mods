@@ -133,6 +133,19 @@ original four.
   water, and come back to the ride to let their riders off; the riders stay seated, and the first person view follows
   a boat. A Great Lake built away from the water in a park saved before 0.1.6 keeps its boats on its own plot, as
   before. The boats float a little above the water or the ground, so their wake never flickers.
+- **Coasters at full speed.** Theme Park Inc's coasters and flumes have speed limits of their own, lower than Theme
+  Park World's (at the speed a ride is built with, 80 for most coasters, 56 for some flumes, 44 for
+  two coasters, where Theme Park World's own coasters go up to 110). On Theme Park World's track a train held to that
+  limit stopped gaining speed down a drop, came out of it slow, and every climb and loop after that needed a chain
+  lift. The converter leaves those limits out, so the three worlds' coasters and flumes run as fast as Theme Park
+  World's own and keep their speed through drops and loops. The ride's speed setting still works as in Theme Park
+  World. A coaster built before this runs at the new speeds once the worlds are converted again (the launcher does
+  that by itself when it updates them).
+- **The Depth Charge flume.** The Bonus Disk's Depth Charge flume has its water and its belt the other way round from
+  every other flume, so in Theme Park World it showed the lift belt on its flat and downhill track and water on the
+  climbs, and the belt over the whole of each lift hill, down its far side too. The converter swaps the two and leaves
+  out its own lift section, so it has water on the flat and the drops and the belt on the climbs like the other
+  flumes.
 - **Outside the gate.** Theme Park Inc's entrance is laid out otherwise than Theme Park World's: the bus stops on a
   pavement two rows deep under the map's edge, with the road between it and the gate. In the three worlds the visitors
   off the bus wait to cross on that pavement and pay at the ticket booths, and the visitors leaving wait for the bus on
