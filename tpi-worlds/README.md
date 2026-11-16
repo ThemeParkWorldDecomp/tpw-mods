@@ -53,6 +53,13 @@ one he gives a new player in the lobby). Every other line is the game's, as in t
   opens them: Land of Invention 1, Polar Zone 3 and Arabian Nights 5. The original four keep their prices.
   With the mod on, the golden key and ticket counts a player is shown also count the three worlds' records, so they
   can be higher than with the mod off (the master save itself is the same either way).
+- **Golden tickets.** Each of the three worlds asks for its six golden tickets what the Theme Park World world of the
+  same key price asks: Land of Invention what Lost Kingdom asks, Polar Zone what Wonder Land asks and Arabian Nights
+  what Space Zone asks (so many visitors in all, so many in the park at once, so many happy, the year's profit and the
+  recent visitors), read from your own Theme Park World data when the world is converted. Theme Park Inc's own world
+  files have those lines only as comments, and before this the three worlds asked for nothing, so their tickets, and
+  the keys they add up to, came at the first checks after the gates opened. Tickets already won in a saved park stay
+  won. Worlds made by an older launcher are converted again to get this.
 - **Prices.** As in Theme Park World, the converted rides charge nothing per ride; shops and sideshows keep Theme Park
   Inc's prices.
 - **Shops that sell.** Theme Park Inc's shops ask up to six times what their goods cost, and its Polar Zone and Land
