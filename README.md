@@ -14,6 +14,7 @@ every mod off the game is exactly the original.
 | --- | --- | --- | --- |
 | [Enable strikes](enable-strikes/README.md) | Staff can go on strike in an open park, as Bullfrog's code was written to do before the release blocked it. | US, European, Gold | Unchanged |
 | [Patrolling staff can cross bridges](staff-cross-bridges/README.md) | Staff walking their rounds can cross a footbridge, like the bridge over the stream in the Lost Kingdom, not only when sent to a job on the other side. | US, European, Gold | Unchanged |
+| [Better land buying](better-land-buying/README.md) | Land can be bought across rivers, lakes and rocks inside the park's grounds, and a strip one square wide by itself; land a purchase closes in stays unbought, with its fence, until you buy it, and you pay only for the land you can build on. | US, European, Gold | Changed: land it left unbought inside the fence stops the original buying land |
 | [PlayStation rides](ps1-rides/README.md) | Adds the seven rides only the PlayStation edition had, and its Tower as a Halloween scenery object, converted from your own PlayStation disc. | US, European, Gold | Changed: a park that uses them needs the mod to load |
 | [TPI Worlds and Rides](tpi-worlds/README.md) | Adds three worlds made from your own copy of Theme Park Inc (SimCoaster): Arabian Nights, Polar Zone and Land of Invention, each with its own rides, shops, sideshows and scenery, and a second group of islands for them. | US, European, Gold | Changed: a park in one of its worlds needs the mod and that world to load |
 

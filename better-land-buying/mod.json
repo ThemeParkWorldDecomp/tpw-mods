@@ -1,0 +1,12 @@
+{
+  "id": "better-land-buying",
+  "name": "Better land buying",
+  "version": "1.0.0",
+  "author": "Zack Pollard",
+  "license": "None chosen yet",
+  "text": "Land can be bought across rivers, lakes and rocks inside the park's grounds, and a strip one square wide can be bought by itself. Land a purchase closes in stays unbought, with its fence, until you buy it, and you pay only for the land you can build on.",
+  "editions": ["US", "European", "Gold"],
+  "conflicts": [],
+  "changes_saves": true,
+  "hooks": ["land_rough_edges", "land_fair_price", "land_thin_strips", "land_unbought"]
+}
