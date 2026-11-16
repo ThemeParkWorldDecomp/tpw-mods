@@ -52,6 +52,15 @@ original four.
   Which three is worked out from your copy's music files: the passage with the most segments of one length between 15
   and 25 seconds. The island screen's other sounds stay the donor's. Worlds made by an older launcher are converted
   again to get this.
+- **Waves round the islands.** The three islands have the lapping waves the original four have: a band of the island
+  screen's own wave texture round each island's shore, the same width, spacing and speed as on the original islands,
+  following the island's outline. The converter makes them from your copy of Theme Park World's island screen
+  (lobby.wad), so nothing of either game is in the mod.
+- **Open water.** The island screen's sea reaches further, so the second ring of islands sits in open water and the
+  sea's edge never comes into view as the camera circles an island or flies between the rings. The sea runs on with
+  the original's texture, colour, movement, light and fog, fading into the distance as the original does. The
+  original four islands are unchanged. Worlds made by an older launcher are converted again to get the waves and
+  the sea.
 - **The worlds' names.** The island screen, its gate signs and the park's name use the world's title (Arabian Nights,
   Polar Zone, Land of Invention), and each ride, shop, sideshow and piece of scenery of a converted world has the name
   Theme Park Inc itself shows for it, which the converter reads from the copy's own English object names (the game's
@@ -159,8 +168,8 @@ original four.
 - **Online.** A park in one of the three worlds cannot be published: the online server has no such world, and the
   game refuses the upload before anything is sent, with its own "cannot upload" message.
 
-With the mod off the game is the original: the three worlds and their islands are not there, the four worlds and
-their islands are untouched, and parks of the original worlds load and save exactly as before. A build without the
+With the mod off the game is the original: the three worlds and their islands are not there, the four worlds,
+their islands and the island screen's sea are untouched, and parks of the original worlds load and save exactly as before. A build without the
 port's fixes never sees the converted files.
 
 ## Not yet the original's
