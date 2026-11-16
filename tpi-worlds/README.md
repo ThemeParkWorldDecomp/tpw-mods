@@ -146,11 +146,23 @@ original four.
   climbs, and the belt over the whole of each lift hill, down its far side too. The converter swaps the two and leaves
   out its own lift section, so it has water on the flat and the drops and the belt on the climbs like the other
   flumes.
+- **Special rides never wear out.** Theme Park Inc's Golden Ticket rides (its special rides: Palace Of Delights, Spin
+  Djinn, The Scarabs and The Scorpions in Arabian Nights, Drop In The Ocean, Hasty Husky, Reindeer Run and Whale Of A
+  Time in Polar Zone, The Thrill Mill, High Flyer, The Great Lake and Wheel Deal in Land of Invention) never wear out
+  there, as they cannot be rebuilt. In the three worlds they do not wear either: they keep their state of repair and
+  their remaining life, so they never break down from wear or need a mechanic's repair, where they wore out like any
+  other ride. Such a ride in a park saved before launcher 0.5.6 gets its remaining life back when the park is loaded.
+  Worlds made by an older launcher are converted again to get this.
 - **Outside the gate.** Theme Park Inc's entrance is laid out otherwise than Theme Park World's: the bus stops on a
   pavement two rows deep under the map's edge, with the road between it and the gate. In the three worlds the visitors
   off the bus wait to cross on that pavement and pay at the ticket booths, and the visitors leaving wait for the bus on
   it, where Theme Park World's walks would leave them standing in front of the gate. A park saved with visitors
   standing there gets them to the bus.
+- **The scenery round the park.** Theme Park Inc places its own scenery outside each park when a park starts: the
+  waterfall and the water of the ponds by the entrance road, the ticket booths, the helipad, the bunting, and each
+  world's installations, penguins or seals. In the three worlds it is placed the same way, where it was missing and the
+  ponds' rock pits showed flat cyan or brown. A park saved before launcher 0.5.6 gets the pieces it lacks when it is
+  loaded. Worlds made by an older launcher are converted again to get this.
 - **Theme Park Inc's visitors.** Theme Park Inc's own kids, parents and grandparents walk and ride among Theme Park
   World's kids in the three worlds: 7 visitors in 10 look like kids, 2 like parents and 1 like a grandparent, as in
   Theme Park Inc. The kids are six of Theme Park World's eight and Theme Park Inc's four, each as often as the others:
