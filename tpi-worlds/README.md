@@ -68,24 +68,32 @@ one he gives a new player in the lobby). Every other line is the game's, as in t
   them in the original worlds; in these three worlds they do so whether that mod is on or not. A park saved before this gets its bridges back as footbridges when it is loaded
   (a path laid on a bridge goes). Land past the canyons and dry riverbeds under the obstacles can be bought with Buy
   Land as any other land, so the park can grow into the land Theme Park Inc opened with its obstacles.
-- **The Invention gate.** Land of Invention's gate starts closed and swings open by itself as soon as the park buys
-  the land it stands on or any land right next to it with Buy Land. The park's starting fence runs through the gate,
-  so the land a new park starts with does not count: only land bought beyond it does. Once the land the gate stands
-  on is the park's, a path can be built through the open gate and the visitors walk through. A new or restarted park
-  has it closed; a saved park needs nothing more, since the gate follows the park's land.
+- **Theme Park Inc's missions.** Theme Park Inc cleared each world's obstacles with a mission, and so does the mod,
+  one after another in Theme Park Inc's order: Land of Invention's gate when 40 visitors are in the park; Polar Zone's
+  swamp, then its tunnel; Arabian Nights' rock fall, then its cliff, then its tunnel. Each mission past the gate asks
+  for the golden tickets Theme Park Inc asked for (won in that park: 1 for the swamp, the Polar tunnel and the rock, 3
+  for the cliff and the Arabian tunnel), skilled staff and a researcher. Theme Park World's staff have no separate
+  skills, so a skill Theme Park Inc asked of a mechanic or engineer is asked of a skilled mechanic here, and one asked
+  of a cleaner, handyman or gardener of a skilled handyman (handymen tend the gardens and sweep), as many of them as
+  Theme Park Inc asked for, skill by skill. A skilled worker is one whose skill bar is three fifths full or more, which
+  training gets a new hire to. Theme Park Inc researched each obstacle; here any researcher on the staff will do. A
+  message in the game's own tag style says what the next mission needs, with what the park has in brackets, and
+  another says when it is done. Then the obstacle clears: the gate swings open, the rubble in a tunnel goes, the rock,
+  the cliff and the swamp go and their ground becomes land like any other. The park's land then grows, free, towards
+  the land Theme Park Inc's park took in with that mission; any of it the fence cannot reach stays for sale with Buy
+  Land. Until its mission is done an obstacle stays whatever land is bought around it: its land can be bought, and
+  nothing can be built on it. The missions are kept with the park when it is saved. A park saved before this keeps
+  every obstacle it had already cleared by buying the land, and starts on the first mission it has not.
+- **The Invention gate.** Land of Invention's gate starts closed and swings open by itself when its mission is done.
+  Once the land it stands on is the park's, a path can be built through the open gate and the visitors walk through.
+  A new or restarted park has it closed.
 - **The tunnels.** Arabian Nights' and Polar Zone's tunnels are drawn dug through, and the visitors walk along them
-  like a footbridge: lay a path up to each end. While the land at a tunnel's far end is not the park's, the rubble that
-  blocked it in Theme Park Inc still lies there; it goes as soon as the park buys land on the tunnel or right next to
-  it beyond its starting fence, as the Invention gate opens. A saved park needs nothing more.
-- **The rock.** Arabian Nights' great rock in the northwest stands, and nothing can be built under it, until the park
-  buys land on it or right next to it beyond its starting fence; then it clears and its ground is land like any other.
-  A saved park needs nothing more: the rock follows the park's land.
-- **The cliff and the swamp.** Arabian Nights' cliff in the east and Polar Zone's swamp beside its starting land stay
-  the same way, until the park buys land on them or right next to them beyond its starting fence; then they clear, the
-  cliff's ground becoming land like any other. Theme Park Inc cleared each with a mission Theme Park World has no part
-  of (golden tickets and skilled staff); buying the land stands in for it. The swamp lies in the ground in the
-  northwest corner as Theme Park Inc draws it, and nothing is built on it until it clears (since launcher 0.5.6;
-  before, it was not drawn at all and blocked nothing).
+  like a footbridge: lay a path up to each end. Until a tunnel's mission is done, the rubble that blocked it in Theme
+  Park Inc lies at its far end.
+- **The rock, the cliff and the swamp.** Arabian Nights' great rock in the northwest and its cliff in the east, and
+  Polar Zone's swamp beside its starting land, stand until their missions are done, and nothing can be built under
+  them; then they clear and their ground is land like any other. The swamp lies in the ground in the northwest
+  corner as Theme Park Inc draws it (since launcher 0.5.6; before, it was not drawn at all and blocked nothing).
 - **The park's edge.** Theme Park Inc shows its park's edge with each world's own walls and fences, the river and
   the lake; it draws no hoarding. Theme Park World's hoarding pieces in its data (a leafy jungle fence and a Halloween
   one) are not drawn in the three worlds, where they ran across the grass beside the worlds' own walls; a park saved
@@ -151,6 +159,6 @@ port's fixes never sees the converted files.
 ## Not yet the original's
 
 The three worlds are played by Theme Park World's rules: its money, its staff, its research and its advisor, and its
-visitors but for the three generations above. Theme Park Inc's own rules (its missions, its business goals, its staff
-training) are not part of this mod. The rides' scripts and run times, the sounds and the music are the donor world's
+visitors but for the three generations above. Theme Park Inc's own rules (its business goals, its staff
+training and the missions other than those that clear the obstacles above) are not part of this mod. The rides' scripts and run times, the sounds and the music are the donor world's
 where the conversion has nothing to go by.
