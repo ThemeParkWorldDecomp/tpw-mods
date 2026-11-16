@@ -8,7 +8,7 @@ folder. A park in one of them needs them to load.
 | | |
 | --- | --- |
 | Id | tpi-worlds |
-| Version | 0.1.6 |
+| Version | 0.1.7 |
 | Author | TPW Decomp |
 | Editions | US, European and Gold |
 | Conflicts | None |
@@ -33,17 +33,25 @@ original four, which the game reads in the world's place:
 | water | Polar Zone | hallow (Halloween World) | The cold and dark world |
 | science | Land of Invention | space (Space Zone) | The machines world |
 
-The donor gives the music, the sound banks, the advisor's voice and models, and any file of the world's folder the
-conversion has no source for. Rides, shops, sideshows, scenery, the island and the easy-mode park never come from the
-donor: a world's build lists are its own. The advisor never names the donor: the only lines of a world's own speech
-are its welcomes ("Welcome to Halloween World"), and Theme Park Inc has no welcome for its three zones, so in the mod's
-worlds he says the game's own welcome that names no world instead ("Welcome to Theme Park World", or Sim Theme Park, the
-one he gives a new player in the lobby). Every other line is the game's, as in the original four.
+The donor gives the island screen's sounds, the sound banks, the advisor's voice and models, and any file of the
+world's folder the conversion has no source for. Rides, shops, sideshows, scenery, the island and the easy-mode park
+never come from the donor: a world's build lists are its own. The advisor never names the donor: the only lines of a
+world's own speech are its welcomes ("Welcome to Halloween World"), and Theme Park Inc has no welcome for its three
+zones, so in the mod's worlds he says the game's own welcome that names no world instead ("Welcome to Theme Park
+World", or Sim Theme Park, the one he gives a new player in the lobby). Every other line is the game's, as in the
+original four.
 
 - **Three more islands.** The island screen has a second ring of islands for the three worlds, north of the original
   four. Tab, or a right click on the view, flies the camera between the rings; the arrows and the panel's buttons browse
   the ring in view. Each island is made by the converter from the world's own gate, terrain and textures. The original
   four islands stay where they are, and the mod's worlds do not move them in the Settings box's theme choice either.
+- **Each island's own music.** With one of the three islands chosen, the island screen plays a loop of that world's
+  own Theme Park Inc park music (the music the park itself plays), where it played its donor's island music. Theme
+  Park Inc has no island screen, so the converter makes it as Theme Park World's own island music was made: three
+  segments of one passage of the world's park music, all of one length, played one after another in a random order.
+  Which three is worked out from your copy's music files: the passage with the most segments of one length between 15
+  and 25 seconds. The island screen's other sounds stay the donor's. Worlds made by an older launcher are converted
+  again to get this.
 - **The worlds' names.** The island screen, its gate signs and the park's name use the world's title (Arabian Nights,
   Polar Zone, Land of Invention), and each ride, shop, sideshow and piece of scenery of a converted world has the name
   Theme Park Inc itself shows for it, which the converter reads from the copy's own English object names (the game's
@@ -159,5 +167,5 @@ port's fixes never sees the converted files.
 
 The three worlds are played by Theme Park World's rules: its money, its staff, its research and its advisor, and its
 visitors but for the three generations above. Theme Park Inc's own rules (its missions, its business goals, its staff
-training) are not part of this mod. The rides' scripts and run times, the sounds and the music are the donor world's
-where the conversion has nothing to go by.
+training) are not part of this mod. The rides' scripts and run times and the sounds are the donor world's where the
+conversion has nothing to go by. The music, in the park and on the island screen, is the world's own.
