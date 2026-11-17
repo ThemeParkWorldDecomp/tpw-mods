@@ -4,7 +4,7 @@ Staff walking their rounds can cross a footbridge, like the bridge over the stre
 original they only crossed one when sent to a job on the other side. A bridge outside a worker's patrol area is still
 never taken.
 
-In the tpi-worlds mod's three worlds staff already cross bridges this way without this mod; it changes the original
+In the SimCoaster/TPI - New Worlds, Rides and Sprites mod's three worlds staff already cross bridges this way without this mod; it changes the original
 worlds.
 
 | | |
