@@ -33,9 +33,11 @@ original four, which the game reads in the world's place:
 | water | Polar Zone | hallow (Halloween World) | The cold and dark world |
 | science | Land of Invention | space (Space Zone) | The machines world |
 
-The donor gives the island screen's sounds, the sound banks, the advisor's voice and models, and any file of the
-world's folder the conversion has no source for. Rides, shops, sideshows, scenery, the island and the easy-mode park
-never come from the donor: a world's build lists are its own. The advisor never names the donor: the only lines of a
+The donor gives the advisor's voice and models, and any file of the world's folder the conversion has no source for.
+Rides, shops, sideshows, scenery, the island and the easy-mode park never come from the donor: a world's build lists
+are its own. Nor do the world's sounds and music: its ambience, its rides' sounds and its music are its own
+SimCoaster AKA Theme Park Inc ones, and where that game has none (the island screen's sound effects) it plays nothing.
+The sounds every world shares (the visitors, the staff, the interface) are Theme Park World's, as in the original four. The advisor never names the donor: the only lines of a
 world's own speech are its welcomes ("Welcome to Halloween World"), and SimCoaster AKA Theme Park Inc has no welcome for its three
 zones, so in the mod's worlds he says the game's own welcome that names no world instead ("Welcome to Theme Park
 World", or Sim Theme Park, the one he gives a new player in the lobby). Every other line is the game's, as in the
@@ -50,8 +52,18 @@ original four.
   music. That game has no island screen, so the converter makes it as Theme Park World's own island music was made:
   three segments of one passage of the world's park music, all of one length, played one after another in a random
   order. Which three is worked out from your copy's music files: the passage with the most segments of one length
-  between 15 and 25 seconds. The island screen's other sounds stay the donor's. Worlds made by an older launcher are
-  converted again to get this.
+  between 15 and 25 seconds. Worlds made by an older launcher are converted again to get this.
+- **No donor sounds on the island screen.** With one of the three islands chosen, the island screen no longer plays
+  its donor's sound effects (Lost Kingdom's jungle beasts on Arabian Nights, Halloween World's bats and bells on Polar
+  Zone, Space Zone's spaceships on Land of Invention). SimCoaster AKA Theme Park Inc has no island screen and no such
+  sounds, so those islands play their music and the island screen's own sounds (the thunder and the rest that every
+  island has), which are the same in both games.
+- **No more fast repeats in the park music.** In a busy Arabian Nights park (and a very busy Polar Zone one) the music
+  turned into one short burst of noise repeated many times a second. SimCoaster AKA Theme Park Inc's own music files
+  for those two worlds end early (in every copy of the game): Arabian Nights' lists 143 pieces of music and has 103,
+  Polar Zone's lists 116 and has 101, and the busiest park music is made of the missing ones. With the mod, a missing
+  piece is never played: the music plays another piece of the same level, or the level below when the whole level is
+  missing. Land of Invention's music is whole.
 - **Waves round the islands.** The three islands have the lapping waves the original four have: a band of the island
   screen's own wave texture round each island's shore, the same width, spacing and speed as on the original islands,
   following the island's outline. The converter makes them from your copy of Theme Park World's island screen
@@ -201,5 +213,6 @@ port's fixes never sees the converted files.
 
 The three worlds are played by Theme Park World's rules: its money, its staff, its research and its advisor, and its
 visitors but for the three generations above. SimCoaster AKA Theme Park Inc's own rules (its missions, its business goals, its staff
-training) are not part of this mod. The rides' scripts and run times and the sounds are the donor world's where the
-conversion has nothing to go by. The music, in the park and on the island screen, is the world's own.
+training) are not part of this mod. The rides' scripts and run times are the donor world's where the
+conversion has nothing to go by. The world's sounds and music, in the park and on the island screen, are its own; the
+sounds every world shares and the advisor's voice are Theme Park World's.
