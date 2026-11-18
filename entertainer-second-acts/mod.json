@@ -1,0 +1,12 @@
+{
+  "id": "entertainer-second-acts",
+  "name": "Entertainers' second acts",
+  "version": "1.0.0",
+  "author": "TPW Decomp",
+  "license": "None chosen yet",
+  "text": "Eight entertainer costumes have a finished second act in the game's files that never plays: the vampire, Frankenstein's monster and the hunchback in Halloween World, the dinosaur, the explorer and the tribal dancer in the Lost Kingdom, and the orange alien and the purple monster in the Space Zone. With the mod on they perform it as well as their first act, chosen at random each time an act starts. The act lasts as long and cheers visitors just as the first does.",
+  "editions": ["US", "European", "Gold"],
+  "conflicts": [],
+  "changes_saves": false,
+  "hooks": ["entertainer_second_acts"]
+}

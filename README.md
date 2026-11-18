@@ -13,6 +13,7 @@ every mod off the game is exactly the original.
 | Mod | What it does | Editions | Saved games |
 | --- | --- | --- | --- |
 | [Enable strikes](enable-strikes/README.md) | Staff can go on strike in an open park, as Bullfrog's code was written to do before the release blocked it. | US, European, Gold | Unchanged |
+| [Entertainers' second acts](entertainer-second-acts/README.md) | Eight entertainer costumes in Halloween World, the Lost Kingdom and the Space Zone perform the second act their sprite files hold but the game never plays, chosen at random with their first. | US, European, Gold | Unchanged |
 | [Patrolling staff can cross bridges](staff-cross-bridges/README.md) | Staff walking their rounds can cross a footbridge, like the bridge over the stream in the Lost Kingdom, not only when sent to a job on the other side. | US, European, Gold | Unchanged |
 | [PlayStation rides](ps1-rides/README.md) | Adds the seven rides only the PlayStation edition had, and its Tower as a Halloween scenery object, converted from your own PlayStation disc. | US, European, Gold | Changed: a park that uses them needs the mod to load |
 | [SimCoaster/TPI - New Worlds, Rides and Sprites](tpi-worlds/README.md) | Adds three worlds made from your own copy of SimCoaster (AKA Theme Park Inc, 2001): Arabian Nights, Polar Zone and Land of Invention, each with its own rides, shops, sideshows and scenery, and a second group of islands for them. | US, European, Gold | Changed: a park in one of its worlds needs the mod and that world to load |

@@ -38,3 +38,10 @@ tpw_add_mod(ps1-rides SOURCES ps1_rides.cpp)
 # the game folder with the mod on; the tpi_worlds hook adds them to the game's list of worlds and the tpi_islands hook
 # gives the island screen a second group of islands for them.
 tpw_add_mod(tpi-worlds SOURCES tpi_worlds.cpp)
+
+# Entertainers' second acts: the eight costumes whose sprite files hold a finished second act that no custom block names
+# perform it at random as well as their first (the entertainer_second_acts hook).
+tpw_add_mod(entertainer-second-acts SOURCES entertainer_second_acts.cpp)
+tpw_add_mod_test(entertainer-second-acts NAME entertainer_second_acts SOURCES tests/test_entertainer_second_acts.cpp
+                 GAME game/people/Entertainer.cpp
+                 KEEP __ZN12CEntertainer8SetStateEN6CStaff10StaffStateE)   # CEntertainer::SetState(CStaff::StaffState)
