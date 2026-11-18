@@ -10,7 +10,7 @@ worlds.
 | | |
 | --- | --- |
 | Id | staff-cross-bridges |
-| Version | 1.0.0 |
+| Version | 1.0.1 |
 | Author | TPW Decomp |
 | Editions | US, European and Gold |
 | Conflicts | None |

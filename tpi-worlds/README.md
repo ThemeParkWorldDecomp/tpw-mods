@@ -8,7 +8,7 @@ folder. A park in one of them needs them to load.
 | | |
 | --- | --- |
 | Id | tpi-worlds |
-| Version | 0.1.7 |
+| Version | 0.1.8 |
 | Author | TPW Decomp |
 | Editions | US, European and Gold |
 | Conflicts | None |

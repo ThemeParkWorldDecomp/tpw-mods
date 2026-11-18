@@ -10,14 +10,24 @@ every mod off the game is exactly the original.
 
 ## Mods
 
+The launcher's Mods box shows them in two groups, Bonus Content first, each mod's name with one short line; a click on
+a mod shows all it does. Each mod names its group in its mod.json (`category`, see [CONTRIBUTING.md](CONTRIBUTING.md)).
+
+### Bonus Content
+
+| Mod | What it does | Editions | Saved games |
+| --- | --- | --- | --- |
+| [PlayStation rides](ps1-rides/README.md) | Adds the seven rides only the PlayStation edition had, and its Tower as a Halloween scenery object, converted from your own PlayStation disc. | US, European, Gold | Changed: a park that uses them needs the mod to load |
+| [SimCoaster/TPI - New Worlds, Rides and Sprites](tpi-worlds/README.md) | Adds three worlds made from your own copy of SimCoaster (AKA Theme Park Inc, 2001): Arabian Nights, Polar Zone and Land of Invention, each with its own rides, shops, sideshows and scenery, and a second group of islands for them. | US, European, Gold | Changed: a park in one of its worlds needs the mod and that world to load |
+| [Entertainers' second acts](entertainer-second-acts/README.md) | Eight entertainer costumes in Halloween World, the Lost Kingdom and the Space Zone perform the second act their sprite files hold but the game never plays, chosen at random with their first. | US, European, Gold | Unchanged |
+| [PS2 Guest Models (3D)](ps2-characters/README.md) | Draws the park's children, staff and entertainers as the PlayStation 2 edition's 3D models, converted from your own PlayStation 2 disc, walking and animated where the sprites were. | US, European, Gold | Unchanged |
+
+### Gameplay
+
 | Mod | What it does | Editions | Saved games |
 | --- | --- | --- | --- |
 | [Enable strikes](enable-strikes/README.md) | Staff can go on strike in an open park, as Bullfrog's code was written to do before the release blocked it. | US, European, Gold | Unchanged |
-| [Entertainers' second acts](entertainer-second-acts/README.md) | Eight entertainer costumes in Halloween World, the Lost Kingdom and the Space Zone perform the second act their sprite files hold but the game never plays, chosen at random with their first. | US, European, Gold | Unchanged |
 | [Patrolling staff can cross bridges](staff-cross-bridges/README.md) | Staff walking their rounds can cross a footbridge, like the bridge over the stream in the Lost Kingdom, not only when sent to a job on the other side. | US, European, Gold | Unchanged |
-| [PlayStation rides](ps1-rides/README.md) | Adds the seven rides only the PlayStation edition had, and its Tower as a Halloween scenery object, converted from your own PlayStation disc. | US, European, Gold | Changed: a park that uses them needs the mod to load |
-| [PS2 Guest Models (3D)](ps2-characters/README.md) | Draws the park's children, staff and entertainers as the PlayStation 2 edition's 3D models, converted from your own PlayStation 2 disc, walking and animated where the sprites were. | US, European, Gold | Unchanged |
-| [SimCoaster/TPI - New Worlds, Rides and Sprites](tpi-worlds/README.md) | Adds three worlds made from your own copy of SimCoaster (AKA Theme Park Inc, 2001): Arabian Nights, Polar Zone and Land of Invention, each with its own rides, shops, sideshows and scenery, and a second group of islands for them. | US, European, Gold | Changed: a park in one of its worlds needs the mod and that world to load |
 
 tpw-port carries this repository as a submodule at mods/ and builds every mod in it into the launcher. The launcher's
 Mods button lists them, each with a switch, and every one is off until the player turns it on. A build without mods/

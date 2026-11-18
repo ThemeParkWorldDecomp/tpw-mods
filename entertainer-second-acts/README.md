@@ -9,7 +9,7 @@ does.
 | | |
 | --- | --- |
 | Id | entertainer-second-acts |
-| Version | 1.0.0 |
+| Version | 1.0.1 |
 | Author | TPW Decomp |
 | Editions | US, European and Gold |
 | Conflicts | None |

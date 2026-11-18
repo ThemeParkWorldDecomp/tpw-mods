@@ -4,7 +4,7 @@
 
 ## Checklist
 
-- [ ] The mod is in its own folder with a mod.json (id, name, version, author, license, text, editions, conflicts, changes_saves, hooks) and is listed in mods.cmake.
+- [ ] The mod is in its own folder with a mod.json (id, name, category, version, author, license, summary, text, editions, conflicts, changes_saves, hooks) and is listed in mods.cmake.
 - [ ] The code is original, under the license in mod.json, with no files of the game.
 - [ ] Tested with the mod off (the game behaves exactly as the original) and with it on.
 - [ ] Any hook the mod needs in tpw-port is described here.

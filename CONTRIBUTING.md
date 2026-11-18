@@ -25,10 +25,12 @@ stops the build with the file and the field named):
 | --- | --- |
 | `id` | The folder's name: lower case letters and digits joined by `-`. The player's choice is kept in launcher.ini as `mod.<id>=1`. |
 | `name` | The name players see. |
+| `category` | Optional. The group the Mods box shows it in: `"Bonus Content"` (content and sights the original left out or other editions had) or `"Gameplay"` (how the park plays). Without it, `"Gameplay"`. The box shows Bonus Content first. |
 | `version` | `X.Y.Z`. Raise it with every change. |
 | `author` | Who wrote it. |
 | `license` | The license of its code. |
-| `text` | What it does, for players: one or two plain sentences. |
+| `summary` | Optional. One short line under its name in the Mods box, about 60 characters (at most 80). Without it, the box shows the first sentence of `text`. |
+| `text` | What it does, for players: a few plain sentences, shown when the player opens the mod's row in the Mods box. |
 | `editions` | Those it works with, from `"US"`, `"European"` and `"Gold"`. |
 | `conflicts` | The ids of mods it cannot be on with (both are checked). `[]` for none. |
 | `changes_saves` | `true` when a park saved with it on differs from the original's saves. The Mods box then warns the player. |

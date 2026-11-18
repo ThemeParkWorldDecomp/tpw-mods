@@ -7,7 +7,7 @@ to load.
 | | |
 | --- | --- |
 | Id | ps1-rides |
-| Version | 0.1.3 |
+| Version | 0.1.4 |
 | Author | TPW Decomp |
 | Editions | US, European and Gold |
 | Conflicts | None |

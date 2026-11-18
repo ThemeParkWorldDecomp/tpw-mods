@@ -1,6 +1,7 @@
 # The mods of this repository, for the port's build (tpw-port's platform/mods.cmake includes this file). One
 # tpw_add_mod per mod: its folder and the sources of its switch-on function. Then its tests, with tpw_add_mod_test. The
-# folders are listed in the order the launcher's Mods box shows them. See CONTRIBUTING.md.
+# launcher's Mods box shows the mods in their groups (mod.json's "category": Bonus Content, then Gameplay), each group
+# in this file's order. See CONTRIBUTING.md.
 
 # Enable strikes: staff can strike in an open park (the strike_gate hook), and the advisor gives the original's two
 # unused strike messages (the strike_messages hook).

@@ -7,7 +7,7 @@ data folder. Display only: parks play and save exactly as before.
 | | |
 | --- | --- |
 | Id | ps2-characters |
-| Version | 0.1.0 |
+| Version | 0.1.1 |
 | Author | TPW Decomp |
 | Editions | US, European and Gold |
 | Conflicts | None |

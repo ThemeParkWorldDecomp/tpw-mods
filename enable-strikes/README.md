@@ -7,7 +7,7 @@ the original never used: a last warning a week before a strike, and word when a 
 | | |
 | --- | --- |
 | Id | enable-strikes |
-| Version | 1.1.0 |
+| Version | 1.1.1 |
 | Author | TPW Decomp |
 | Editions | US, European and Gold |
 | Conflicts | None |
