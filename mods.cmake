@@ -45,3 +45,8 @@ tpw_add_mod(entertainer-second-acts SOURCES entertainer_second_acts.cpp)
 tpw_add_mod_test(entertainer-second-acts NAME entertainer_second_acts SOURCES tests/test_entertainer_second_acts.cpp
                  GAME game/people/Entertainer.cpp
                  KEEP __ZN12CEntertainer8SetStateEN6CStaff10StaffStateE)   # CEntertainer::SetState(CStaff::StaffState)
+
+# PS2 Guest Models (3D): the PlayStation 2 edition's 3D models of the children, made from the player's own PlayStation 2
+# disc (mod.json's "content", the data folder's assets/ps2); the ps2_characters hook draws them in the sprites' place.
+# Display only.
+tpw_add_mod(ps2-characters SOURCES ps2_characters.cpp)

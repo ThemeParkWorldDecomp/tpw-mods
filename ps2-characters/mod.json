@@ -1,0 +1,13 @@
+{
+  "id": "ps2-characters",
+  "name": "PS2 Guest Models (3D)",
+  "version": "0.1.0",
+  "author": "TPW Decomp",
+  "license": "None chosen yet",
+  "text": "Draws the park's children, staff and entertainers as the PlayStation 2 edition's 3D models, converted from your own PlayStation 2 disc, walking and animated where the sprites were, with the visitors' heads on rides and the first-person views too. Both PC mechanics are drawn as the PS2's one mechanic. The four entertainers the PS2 has no model for are drawn as a PS2 entertainer of their own world: the ladybird as the flower, the hunchback as Frankenstein's monster, the native as the hunter and the tentacle monster as the alien. All 12 hireable staff and entertainer types stay. Drop the disc on the launcher to convert them; the mod stays locked until that disc's models are in the data folder. Display only: parks play and save exactly as before.",
+  "editions": ["US", "European", "Gold"],
+  "conflicts": [],
+  "changes_saves": false,
+  "hooks": ["ps2_characters"],
+  "content": "ps2"
+}
