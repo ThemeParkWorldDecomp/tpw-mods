@@ -26,6 +26,41 @@ tpw_add_mod_test(staff-cross-bridges NAME staff_cross_bridges SOURCES tests/test
                  KEEP __ZN5CPeep20SetRandomDestinationEv   # CPeep::SetRandomDestination()
                       _gPeepNoCell)
 
+# Better land buying: a land purchase's sides may cross rivers, lakes and rocks (the land_rough_edges hook), it may be one
+# fence square wide (land_thin_strips), land it closes in stays unowned and fenced until bought (land_unbought), and it costs
+# the unowned land inside its new fence line, rivers, lakes and rocks free (land_fair_price).
+tpw_add_mod(better-land-buying SOURCES better_land_buying.cpp)
+tpw_add_mod_test(better-land-buying NAME better_land_buying SOURCES tests/test_better_land_buying.cpp
+                 GAME game/park/LLCellSystem.cpp
+                 KEEP __Z24LLCC_IsHoardingEditLegaliiiib       # LLCC_IsHoardingEditLegal(int, int, int, int, bool)
+                      __Z16LLCC_SoIsItLegalv                   # LLCC_SoIsItLegal()
+                      __Z14LLCC_FloodFilliihh                  # LLCC_FloodFill(int, int, unsigned char, unsigned char)
+                      __Z26LLCC_CopyCurrentToNewImagev         # LLCC_CopyCurrentToNewImage()
+                      __Z22LLCC_AddNewAreaToImageiiii          # LLCC_AddNewAreaToImage(int, int, int, int)
+                      __Z31LLCC_CreateCurrentHoardingImagev    # LLCC_CreateCurrentHoardingImage()
+                      _gHoardingLeft _gHoardingTop _gHoardingRight _gHoardingBottom _gLLCCWidth _gLLCCHeight _gLLCC4818
+                      _gLLCC47CC _gLLCCC204 _gLLCCEdgeCount _gLLCCEdgeMarks _gLLCCHoardingImages)
+# Each hook alone, including land_rough_edges in an original world: a rectangle round the gate is refused.
+add_test(NAME mod_better_land_buying_gate COMMAND tpw_mod_test_better_land_buying --gate-only)
+get_test_property(mod_better_land_buying DISABLED land_buying_test_disabled)
+if(land_buying_test_disabled)
+  set_tests_properties(mod_better_land_buying_gate PROPERTIES DISABLED ON)
+endif()
+tpw_add_mod_test(better-land-buying NAME better_land_buying_fence SOURCES tests/test_better_land_buying_fence.cpp
+                 GAME game/park/LLCellSystem.cpp game/park/LLCellRide.cpp
+                 KEEP __Z19LLCC_ReviseHoardingiiii                    # LLCC_ReviseHoarding(int, int, int, int)
+                      __Z17LLCC_LockHoardingb                         # LLCC_LockHoarding(bool)
+                      __Z21LLCC_FillInsideOfParkv                     # LLCC_FillInsideOfPark()
+                      __Z31LLCC_CreateCurrentHoardingImagev           # LLCC_CreateCurrentHoardingImage()
+                      __Z20LLCC_BuildHoardingDBiiiicb                 # LLCC_BuildHoardingDB(int, int, int, int, char, bool)
+                      __ZN3tpw4land14UnboughtBeforeEiiii              # tpw::land::UnboughtBefore(int, int, int, int)
+                      __ZN3tpw4land15UnboughtPrepareEv                # tpw::land::UnboughtPrepare()
+                      __ZN3tpw4land18UnboughtKeepsFenceEPK10CTrackCell   # tpw::land::UnboughtKeepsFence(CTrackCell const*)
+                      __ZN3tpw4land13UnboughtAfterEv                  # tpw::land::UnboughtAfter()
+                      _gHoardingLeft _gHoardingTop _gHoardingRight _gHoardingBottom _gLLCCWidth _gLLCCHeight _gLLCC4818
+                      _gLLCCE0CC _gLLCCHoardingImages _gLLCCReviseAnswer
+                      _gLLCCHoardMinX _gLLCCHoardMinY _gLLCCHoardMaxX _gLLCCHoardMaxY)
+
 # PlayStation rides: its rides are content made from the player's own PlayStation disc (mod.json's "content", the data
 # folder's assets/ps1), which the launcher lays over the game folder with the mod on; the ps1_badge hook tags them "PS1"
 # on the Buy Ride panel while the launcher's "Show Ride Badges" is on, the ps1_ground hook blends their own ground

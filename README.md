@@ -28,6 +28,7 @@ a mod shows all it does. Each mod names its group in its mod.json (`category`, s
 | --- | --- | --- | --- |
 | [Enable strikes](enable-strikes/README.md) | Staff can go on strike in an open park, as Bullfrog's code was written to do before the release blocked it. | US, European, Gold | Unchanged |
 | [Patrolling staff can cross bridges](staff-cross-bridges/README.md) | Staff walking their rounds can cross a footbridge, like the bridge over the stream in the Lost Kingdom, not only when sent to a job on the other side. | US, European, Gold | Unchanged |
+| [Better land buying](better-land-buying/README.md) | Land can be bought across rivers, lakes and rocks inside the park's grounds, and a strip one square wide by itself; land a purchase closes in stays unbought, with its fence, until you buy it, and you pay only for the land you can build on. | US, European, Gold | Changed: land it left unbought inside the fence stops the original buying land |
 
 tpw-port carries this repository as a submodule at mods/ and builds every mod in it into the launcher. The launcher's
 Mods button lists them, each with a switch, and every one is off until the player turns it on. A build without mods/
