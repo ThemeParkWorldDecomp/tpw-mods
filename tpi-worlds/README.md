@@ -8,7 +8,7 @@ folder. A park in one of them needs them to load.
 | | |
 | --- | --- |
 | Id | tpi-worlds |
-| Version | 0.1.8 |
+| Version | 0.1.9 |
 | Author | TPW Decomp |
 | Editions | US, European and Gold |
 | Conflicts | None |
@@ -110,9 +110,13 @@ original four.
   on is the park's, a path can be built through the open gate and the visitors walk through. A new or restarted park
   has it closed; a saved park needs nothing more, since the gate follows the park's land.
 - **The tunnels.** Arabian Nights' and Polar Zone's tunnels are drawn dug through, and the visitors walk along them
-  like a footbridge: lay a path up to each end. While the land at a tunnel's far end is not the park's, the rubble that
-  blocked it in SimCoaster AKA Theme Park Inc still lies there; it goes as soon as the park buys land on the tunnel or right next to
-  it beyond its starting fence, as the Invention gate opens. A saved park needs nothing more.
+  like a footbridge: lay a path up to each end, and it joins the tunnel's end. The visitors wander through as they do
+  over a footbridge and keep to the tunnel's walkway, two tiles wide, out to its mouths, never onto the sand beside it.
+  While the land at a tunnel's far end is not the park's, the rubble that blocked it in SimCoaster AKA Theme Park Inc
+  still lies there, with the boulders on top of Arabian Nights' tunnel; they go as soon as the park buys land on the
+  tunnel or right next to it beyond its starting fence, as the Invention gate opens, and the land over the tunnel can
+  then be built on. A saved park needs nothing more. Worlds made by a launcher before 0.6.1 are converted again to
+  clear the boulders (the launcher does that by itself once).
 - **The rock.** Arabian Nights' great rock in the northwest stands, and nothing can be built under it, until the park
   buys land on it or right next to it beyond its starting fence; then it clears and its ground is land like any other.
   A saved park needs nothing more: the rock follows the park's land.
@@ -127,7 +131,9 @@ original four.
   one) are not drawn in the three worlds, where they ran across the grass beside the worlds' own walls; a park saved
   with them loses them when it is loaded. The land the park owns and Buy Land are unchanged: the darkened ground
   outside the park still shows where it ends, and it fades into the park's land over one cell, as the ground does
-  along the river's banks, where it ended in a hard stepped line.
+  along the river's banks, where it ended in a hard stepped line. Since launcher 0.6.1 it fades the same way along the
+  canyons' cliffs and over Arabian Nights' tunnel, which the worlds' own models draw, where it still showed as a
+  stepped line.
 - **Rides that run.** SimCoaster AKA Theme Park Inc's Golden Ticket rides (Spin Djinn, The Scorpions and others in all three
   worlds) hold their opening pose until their script's SPECIAL switch is set, which Theme Park World never sets. In
   the three worlds such a ride's script starts with the switch set, so the ride is drawn whole once built and its
