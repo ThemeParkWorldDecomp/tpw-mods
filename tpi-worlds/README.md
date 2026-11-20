@@ -8,7 +8,7 @@ folder. A park in one of them needs them to load.
 | | |
 | --- | --- |
 | Id | tpi-worlds |
-| Version | 0.1.9 |
+| Version | 0.1.10 |
 | Author | TPW Decomp |
 | Editions | US, European and Gold |
 | Conflicts | None |
@@ -195,8 +195,15 @@ original four.
   weather moves each generation's happiness, thirst and hunger its own way: rain, storms, snow and
   heatwaves (a heatwave being the world's own hottest weather; snow counted as rain until launcher 0.5.6). Which type
   a visitor is follows from the visitor itself, so it stays the same when the park is saved and loaded, and nothing
-  new goes into the save. The sequel's umbrellas and its boredom threshold have nothing in Theme Park World to act
-  on and are left out. Worlds made by an older launcher are converted again to get this.
+  new goes into the save. The sequel's boredom threshold has nothing in Theme Park World to act on and is left out.
+  Worlds made by an older launcher are converted again to get this.
+- **Umbrellas.** A visitor who buys from a world's Umbrella Shop walks around holding SimCoaster AKA Theme Park Inc's
+  umbrella (blue, red and white, or rainbow), held over its head at its own height and size as in the sequel, instead
+  of coming out with nothing. As there, a visitor holding a balloon throws it away for the umbrella. The umbrella is
+  kept through rides and shops, never runs out like a balloon and cannot be burst, and on a day of rain, storms or
+  snow it keeps one point of the weather's unhappiness off, as the sequel's levels file says. It is kept when the park
+  is saved and loaded, with nothing new in the save; with the mod off, or in a build without it, the visitor holds a
+  balloon instead. Worlds made by an older launcher are converted again to get this.
 - **Men's and women's toilets.** SimCoaster AKA Theme Park Inc has a toilet for boys and one for girls. In the three worlds, once the
   park has at least one of each (open or not), men and boys use only the men's and women and girls only the women's;
   with only one kind built, everyone uses it. A visitor is a boy or a girl, a man or a woman, by its look. Theme Park
