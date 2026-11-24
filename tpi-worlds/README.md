@@ -8,7 +8,7 @@ folder. A park in one of them needs them to load.
 | | |
 | --- | --- |
 | Id | tpi-worlds |
-| Version | 0.1.10 |
+| Version | 0.1.11 |
 | Author | TPW Decomp |
 | Editions | US, European and Gold |
 | Conflicts | None |
@@ -115,8 +115,15 @@ original four.
   While the land at a tunnel's far end is not the park's, the rubble that blocked it in SimCoaster AKA Theme Park Inc
   still lies there, with the boulders on top of Arabian Nights' tunnel; they go as soon as the park buys land on the
   tunnel or right next to it beyond its starting fence, as the Invention gate opens, and the land over the tunnel can
-  then be built on. A saved park needs nothing more. Worlds made by a launcher before 0.6.1 are converted again to
-  clear the boulders (the launcher does that by itself once).
+  then be built on. Since mod 0.1.11 the rubble-textured roof also clears, leaving plain desert ground at the top's
+  height, which takes paths like any other land, over the walkway too. A path across it joins the plateaus on both
+  sides of the canyon (the north one has no other way in). Paths along its sides are visible, including paths an older
+  park saved hidden under the roof. Visitors walk across on top while others walk through the tunnel underneath; the
+  two never mix. The passage underneath keeps its two-wide route and both mouths whatever is built on top, and only
+  its mouths join paths. The canyon's rim beside the top rises with it, so the cleared top shows no light band or
+  lines along its edges; like the rim elsewhere it takes no path. In first person you walk over the top without
+  falling in, or through the tunnel from either mouth. A saved park needs nothing more. Worlds made by a launcher
+  before 0.6.3 are converted again to clear the roof (the launcher does that by itself once).
 - **The rock.** Arabian Nights' great rock in the northwest stands, and nothing can be built under it, until the park
   buys land on it or right next to it beyond its starting fence; then it clears and its ground is land like any other.
   A saved park needs nothing more: the rock follows the park's land.
@@ -148,9 +155,12 @@ original four.
   not open. The Great Lake is the sequel's boating lake on Land of Invention's lake: it
   can be built only with its back (the side away from its entrance and exit) on the lake's water, so the lake's shore
   land must be bought first. Its boats sail out onto the lake, bumping about among the buoys with their wake on the
-  water, and come back to the ride to let their riders off; the riders stay seated, and the first person view follows
-  a boat. A Great Lake built away from the water in a park saved before 0.1.6 keeps its boats on its own plot, as
-  before. The boats float a little above the water or the ground, so their wake never flickers.
+  water, and stay out there as in the sequel: when a ride ends its riders beam off where their boat is, and the next
+  riders beam onto a waiting boat (until 0.1.11 the boats sailed back under the ride's building to let their riders
+  off). The first person view follows a boat. A Great Lake built away from the water in a park saved before 0.1.6
+  keeps its boats on its own plot, as before. The boats float a little above the water or the ground, so their wake
+  never flickers; until launcher 0.6.3 they sailed under the lake's water, as the converter took a flat drained-lake
+  surface far below its waves for its water level. Worlds made by an older launcher are converted again to get this.
 - **Coasters at full speed.** SimCoaster AKA Theme Park Inc's coasters and flumes have speed limits of their own, lower than Theme
   Park World's (at the speed a ride is built with, 80 for most coasters, 56 for some flumes, 44 for
   two coasters, where Theme Park World's own coasters go up to 110). On Theme Park World's track a train held to that
