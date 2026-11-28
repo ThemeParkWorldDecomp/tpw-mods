@@ -4,7 +4,7 @@
   "category": "Gameplay",
   "version": "1.1.1",
   "author": "TPW Decomp",
-  "license": "None chosen yet",
+  "license": "GPL-3.0-or-later",
   "summary": "Unhappy staff can go on strike in an open park.",
   "text": "Staff can go on strike in an open park, as Bullfrog's code was written to do before the release blocked it. Strikes still need a park older than 24 months and staff with a real grievance. The advisor also gives the two strike messages the original never used: a last warning a week before a strike, and word when a strike is over.",
   "editions": ["US", "European", "Gold"],

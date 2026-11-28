@@ -4,7 +4,7 @@
   "category": "Bonus Content",
   "version": "0.1.1",
   "author": "TPW Decomp",
-  "license": "None chosen yet",
+  "license": "GPL-3.0-or-later",
   "summary": "Children, staff and entertainers as the PS2's 3D models.",
   "text": "Draws the park's children, staff and entertainers as the PlayStation 2 edition's 3D models, converted from your own PlayStation 2 disc: walking and animated where the sprites were, with the visitors' heads on rides and in the first-person views too. The PC's two mechanics share the PS2's one, and the four entertainers it has no model for wear one from their own world (the ladybird the flower, the hunchback Frankenstein's monster, the native the hunter, the tentacle monster the alien). Every staff and entertainer type can still be hired. Locked until that disc's models are in the data folder: drop the disc on the launcher. Display only: parks play and save exactly as before.",
   "editions": ["US", "European", "Gold"],

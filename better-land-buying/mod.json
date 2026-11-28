@@ -4,7 +4,7 @@
   "category": "Gameplay",
   "version": "1.0.0",
   "author": "Zack Pollard",
-  "license": "None chosen yet",
+  "license": "GPL-3.0-or-later",
   "summary": "Buy land across rivers and rocks, at a fair price.",
   "text": "Land can be bought across rivers, lakes and rocks inside the park's grounds, and a strip one square wide can be bought by itself. Land a purchase closes in stays unbought, with its fence, until you buy it, and you pay only for the land you can build on.",
   "editions": ["US", "European", "Gold"],

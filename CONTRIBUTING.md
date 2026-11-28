@@ -10,7 +10,8 @@ accepts and set in the launcher or a game menu. tpw-decomp takes no changes. See
 
 - Its own folder, `<id>/` at the top of this repository, with a mod.json (below), its code and its tests, and a line
   in mods.cmake.
-- Original code under the license named in mod.json. No files of the game, and nothing copied from them.
+- Original code, under the GNU GPL version 3 or later like the rest of this repository ([LICENSE](LICENSE)); a pull
+  request offers its code under it. No files of the game, and nothing copied from them.
 - Tests with the mod off and with it on. With it off, the game must behave exactly as the original.
 - One mod per pull request. Say what you tested and on what: the edition (US, European, Gold) and the system.
 
@@ -28,7 +29,7 @@ stops the build with the file and the field named):
 | `category` | Optional. The group the Mods box shows it in: `"Bonus Content"` (content and sights the original left out or other editions had) or `"Gameplay"` (how the park plays). Without it, `"Gameplay"`. The box shows Bonus Content first. |
 | `version` | `X.Y.Z`. Raise it with every change. |
 | `author` | Who wrote it. |
-| `license` | The license of its code. |
+| `license` | The license of its code: `GPL-3.0-or-later`. |
 | `summary` | Optional. One short line under its name in the Mods box, about 60 characters (at most 80). Without it, the box shows the first sentence of `text`. |
 | `text` | What it does, for players: a few plain sentences, shown when the player opens the mod's row in the Mods box. |
 | `editions` | Those it works with, from `"US"`, `"European"` and `"Gold"`. |

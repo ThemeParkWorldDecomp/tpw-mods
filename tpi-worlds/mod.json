@@ -4,7 +4,7 @@
   "category": "Bonus Content",
   "version": "0.1.11",
   "author": "TPW Decomp",
-  "license": "None chosen yet",
+  "license": "GPL-3.0-or-later",
   "summary": "Three SimCoaster worlds, from your own copy of that game.",
   "text": "Adds three worlds made from your own copy of SimCoaster (AKA Theme Park Inc, 2001), the game's sequel: Arabian Nights, Polar Zone and Land of Invention, each with its own rides, shops, sideshows and scenery, played by Theme Park World's rules on a second group of islands. It stays locked until that game's worlds are in the data folder. A park in one of them needs them to load.",
   "editions": ["US", "European", "Gold"],

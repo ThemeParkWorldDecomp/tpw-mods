@@ -55,3 +55,10 @@ Players set it in the launcher or a game menu, never by editing a .sam file.
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## License
+
+The mods' own code is free software under the GNU General Public License, version 3 or (at your option) any later
+version (GPL-3.0-or-later); the full text is [LICENSE](LICENSE). None of the game's data is in this repository: you use
+your own copy of the game. The game itself, its code and its data belong to its rights holder, Electronic Arts, and are
+not covered.
